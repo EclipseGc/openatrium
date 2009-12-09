@@ -1,0 +1,1489 @@
+# Serbian translation of drupal (6.8)
+# Copyright (c) 2009 by the Serbian translation team
+# Generated from files:
+#  install.php,v 1.113.2.7 2008/10/22 16:31:37 goba
+#  taxonomy.admin.inc,v 1.22.2.2 2008/10/08 14:23:59 goba
+#  system.admin.inc,v 1.63.2.5 2008/11/26 13:54:33 dries
+#  system.js,v 1.14.2.1 2008/02/07 18:23:30 goba
+#  install.inc,v 1.56.2.3 2008/08/14 09:26:43 dries
+#  system.module,v 1.585.2.26 2008/12/11 17:39:42 goba
+#  node.module,v 1.947.2.11 2008/06/25 08:59:57 goba
+#  user.admin.inc,v 1.18.2.1 2008/08/13 23:59:14 drumm
+#  user.module,v 1.892.2.9 2008/11/05 14:13:03 dries
+#  locale.module,v 1.212.2.5 2008/10/20 09:31:06 goba
+#  comment.module,v 1.617.2.3 2008/09/17 06:22:38 goba
+#  block.admin.inc,v 1.14.2.5 2008/11/24 06:00:02 dries
+#  statistics.admin.inc,v 1.6 2008/01/08 10:35:42 goba
+#  statistics.module,v 1.272 2008/01/04 09:31:48 goba
+#  system.install,v 1.238.2.5 2008/09/17 05:33:36 goba
+#  upload.module,v 1.197.2.3 2008/10/08 20:12:18 goba
+#  menu.admin.inc,v 1.26.2.3 2008/02/11 15:12:53 goba
+#  locale.inc,v 1.174.2.5 2008/12/10 21:29:36 goba
+#  unicode.inc,v 1.29 2007/12/28 12:02:50 dries
+#  batch.inc,v 1.14 2007/12/20 11:57:20 goba
+#  database.mysqli.inc,v 1.54 2008/01/23 09:59:29 goba
+#  database.mysql.inc,v 1.89 2008/01/24 10:46:54 goba
+#  database.pgsql.inc,v 1.68.2.3 2008/11/17 10:31:41 goba
+#  file.inc,v 1.121.2.5 2008/10/20 09:42:31 goba
+#  form.inc,v 1.265.2.16 2008/11/22 13:03:19 dries
+#  filter.module,v 1.204.2.8 2008/12/10 22:30:14 goba
+#  node.admin.inc,v 1.19.2.2 2008/11/10 10:31:06 goba
+#  install.mysql.inc,v 1.9 2008/01/23 09:59:29 goba
+#  install.mysqli.inc,v 1.12 2008/01/23 09:59:29 goba
+#  install.pgsql.inc,v 1.6 2007/10/22 15:22:39 dries
+#  theme.maintenance.inc,v 1.10 2008/01/24 09:42:50 goba
+#  menu.install,v 1.9 2008/01/30 20:27:28 goba
+#  statistics.pages.inc,v 1.2 2007/10/20 21:57:50 goba
+#  default.profile,v 1.22 2007/12/17 12:43:34 goba
+#  update.report.inc,v 1.10.2.2 2008/08/28 08:14:56 dries
+#  update.module,v 1.17.2.1 2008/09/23 10:19:02 goba
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: drupal (6.8)\n"
+"POT-Creation-Date: 2009-02-22 10:38+0100\n"
+"PO-Revision-Date: 2009-01-31 19:57+0100\n"
+"Language-Team: Serbian\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=((((n%10)==1)&&((n%100)!=11))?(0):(((((n%10)"
+">=2)&&((n%10)<=4))&&(((n%100)<10)||((n%100)>=20)))?(1):2));\n"
+
+#: install.php:118
+msgid "Requirements problem"
+msgstr "Проблеми са затевима Друпала"
+
+#: install.php:200
+msgid "Database configuration"
+msgstr "Подешавање базе"
+
+#: install.php:222
+msgid ""
+"Your web server does not appear to support any common database types. Check "
+"with your hosting provider to see if they offer any databases that <a href="
+"\"@drupal-databases\">Drupal supports</a>."
+msgstr ""
+"Чини се да Ваш веб сервер не подржава уобичајене типове база података. "
+"Проверите са Вашим провајдером да ли они имају да Вам понуде неку базу "
+"података коју <a href=\"@drupal-databases\">Друпал подржава</a>."
+
+#: install.php:228
+msgid "Basic options"
+msgstr "Основне опције"
+
+#: install.php:229
+msgid "To set up your @drupal database, enter the following information."
+msgstr "Да бисте подесили вашу @drupal базу података, унесите следеће податке."
+
+#: install.php:235
+msgid "Database type"
+msgstr "Тип базе података"
+
+#: install.php:239
+msgid "The type of database your @drupal data will be stored in."
+msgstr "Тип базе података у којој ће се чувати ваши @drupal  подаци."
+
+#: install.php:241
+msgid ""
+"The name of the database your @drupal data will be stored in. It must exist "
+"on your server before @drupal can be installed."
+msgstr ""
+"Назив ваше базе података у којој ће се чувати ваши @drupal подаци. Она мора "
+"постојати на вашем серверу пре него што инсталирате @drupal."
+
+#: install.php:250
+msgid ""
+"The name of the %db_type database your @drupal data will be stored in. It "
+"must exist on your server before @drupal can be installed."
+msgstr ""
+"Назив %db_type базе података у којој ће се чувати ваши @drupal подаци. Она "
+"мора постојати на вашем серверу пре него што инсталирате @drupal."
+
+#: install.php:257
+msgid "Database name"
+msgstr "Назив базе података"
+
+#: install.php:268
+msgid "Database username"
+msgstr "Корисничко име за приступ бази података"
+
+#: install.php:278
+msgid "Database password"
+msgstr "Лозинка за приступ бази података"
+
+#: install.php:286; modules/taxonomy/taxonomy.admin.inc:676
+msgid "Advanced options"
+msgstr "Напредне могућности"
+
+#: install.php:289
+msgid ""
+"These options are only necessary for some sites. If you're not sure what you "
+"should enter here, leave the default settings or check with your hosting "
+"provider."
+msgstr ""
+"Ове опције су неопходне само за неке сајтове. Ако нисте сигурни шта треба "
+"овде да унесете, оставите унете почетне вредности или проверите са вашим "
+"провајдером."
+
+#: install.php:295
+msgid "Database host"
+msgstr "Домаћин (host) базе података"
+
+#: install.php:300
+msgid "If your database is located on a different server, change this."
+msgstr "Уколико се ваша база података налази на другом серверу, промените ово."
+
+#: install.php:306
+msgid "Database port"
+msgstr "Порт базе података"
+
+#: install.php:310
+msgid ""
+"If your database server is listening to a non-standard port, enter its "
+"number."
+msgstr ""
+"Ако ваш сервер базе података ослушкује нестандардни порт, унесите његов број."
+
+#: install.php:317
+msgid "Table prefix"
+msgstr "Префикс табеле"
+
+#: install.php:321
+msgid ""
+"If more than one application will be sharing this database, enter a table "
+"prefix such as %prefix for your @drupal site here."
+msgstr ""
+"Ако ће базу података делити више апликација, унесите префикс за табеле као "
+"што је %prefix за Ваш @drupal сајт овде."
+
+#: install.php:1101,491,326
+msgid "Save and continue"
+msgstr "Сачувај и настави"
+
+#: install.php:354
+msgid ""
+"The database table prefix you have entered, %db_prefix, is invalid. The "
+"table prefix can only contain alphanumeric characters, periods, or "
+"underscores."
+msgstr ""
+"Префикс табеле базе података који сте унели, %db_prefix, је неисправан. "
+"Префикси табелча у себи могу садржати само алфанумеричке карактере, тачке "
+"или доње црте."
+
+#: install.php:358
+msgid "Database port must be a number."
+msgstr "Порт базе података мора бити број."
+
+#: install.php:368
+msgid ""
+"In your %settings_file file you have configured @drupal to use a %db_type "
+"server, however your PHP installation currently does not support this "
+"database type."
+msgstr ""
+"У Вашој %settings_file датотеци сте конфигурисали да @drupal користи %"
+"db_type сервер, међутим ваш  инсталирани PHP тренутно не подржава овај тип "
+"базе података."
+
+#: install.php:381
+msgid ""
+"In order for Drupal to work, and to continue with the installation process, "
+"you must resolve all permission issues reported above. We were able to "
+"verify that we have permission for the following commands: %commands. For "
+"more help with configuring your database server, see the <a href=\"http://"
+"drupal.org/node/258\">Installation and upgrading handbook</a>. If you are "
+"unsure what any of this means you should probably contact your hosting "
+"provider."
+msgstr ""
+"Како би Друпал функционисао а ви наставили са процесом инсталације, морате "
+"разрешити све проблеме са дозволама пријављене овде. Успели смо да се "
+"уверимо да имамо дозволу за следеће команде: %commands.  За додатну помоћ "
+"око конфигурисања вашег сервера базе података погледајте <a href=\"http://"
+"drupal.org/node/258\">Упутство о инсталацији и надоградњи</a>. Ако нсите "
+"сигурни шта све ово значи најбоље је да се обратите свом провајдеру."
+
+#: install.php:443
+msgid "Select an installation profile"
+msgstr "Одаберите инсталациони профил"
+
+#: install.php:951,567,525
+msgid "Choose language"
+msgstr "Изабери језик"
+
+#: install.php:527
+msgid ""
+"With the addition of an appropriate translation package, this installer is "
+"capable of proceeding in another language of your choice. To install and use "
+"Drupal in a language other than English:"
+msgstr ""
+"Са додатком одговарајућег преводилачког пакета, ова инсталациона скрипта је "
+"у стању да настави на другом језику, по Вашем избору. Да инсталирате и "
+"користите Друпал на језику различитом од енглеског:"
+
+#: install.php:528
+msgid ""
+"Determine if <a href=\"@translations\" target=\"_blank\">a translation of "
+"this Drupal version</a> is available in your language of choice. A "
+"translation is provided via a translation package; each translation package "
+"enables the display of a specific version of Drupal in a specific language. "
+"Not all languages are available for every version of Drupal."
+msgstr ""
+"Утврдите да ли је <a href=\"@translations\" target=\"_blank\">превод ове "
+"верзије Друпала</a> на Ваш жељени језик на располагању. Превод се даје преко "
+"пакета за превод: сваки пакет за превод омогућава приказ одређене верзије "
+"Друпала на одређеном језику. Нису сви језици на располагању за сваку верзију "
+"Друпала."
+
+#: install.php:529
+msgid ""
+"If an alternative translation package of your choice is available, download "
+"and extract its contents to your Drupal root directory."
+msgstr ""
+"Ако је на располагању алтернативни пакет за превођење, преузми га и распакуј "
+"његов садржај у Ваш коренски директоријум Друпала."
+
+#: install.php:530
+msgid ""
+"Return to choose language using the second link below and select your "
+"desired language from the displayed list. Reloading the page allows the list "
+"to automatically adjust to the presence of new translation packages."
+msgstr ""
+"Вратите се да одаберете језик користећи споредни линк испод и одаберите "
+"жељени јеуик из приказане листе. Поновно учитавање ове странице омогућава "
+"листи да се аутоматски прилагоди на присуство нових преведених пакета."
+
+#: install.php:531
+msgid ""
+"Alternatively, to install and use Drupal in English, or to defer the "
+"selection of an alternative language until after installation, select the "
+"first link below."
+msgstr ""
+"Алтернативно, да инсталирате и користите Друпал на енглеском, или да "
+"одложите одабир алтернативног језика до после инсталације, одаберите прву "
+"везу дату испод."
+
+#: install.php:532
+msgid "How should the installation continue?"
+msgstr "Како ће се инсталација наставити?"
+
+#: install.php:533
+msgid "Continue installation in English"
+msgstr "Наставити инсталацију на Енглеском"
+
+#: install.php:533
+msgid "Return to choose a language"
+msgstr "Врати се да изабереш језик"
+
+#: install.php:536
+msgid "Install Drupal in English"
+msgstr "Инсталирати Друпал на Енглеском"
+
+#: install.php:536
+msgid "Learn how to install Drupal in other languages"
+msgstr "Сазнај како да инсталираш Друпал на другим језицима."
+
+#: install.php:583
+msgid "(@language)"
+msgstr "(@language)"
+
+#: install.php:589
+msgid "(built-in)"
+msgstr "(уграђен)"
+
+#: install.php:595
+msgid "Select language"
+msgstr "Изаберите језик"
+
+#: install.php:605
+msgid "No profiles available"
+msgstr "Нема доступних профила"
+
+#: install.php:606
+msgid ""
+"We were unable to find any installer profiles. Installer profiles tell us "
+"what modules to enable and what schema to install in the database. A profile "
+"is necessary to continue with the installation process."
+msgstr ""
+"Нисмо могли да пронађемо ниједан профил за инсталацију. Инсталациони профили "
+"нам говоре које модуле да укључимо и која је шема за инсталацију базе "
+"података. Профил је неопходан за наставак инсталационог процеса."
+
+#: install.php:617
+msgid "Drupal already installed"
+msgstr "Друпал је већ инсталиран"
+
+#: install.php:618
+msgid ""
+"<ul><li>To start over, you must empty your existing database.</li><li>To "
+"install to a different database, edit the appropriate <em>settings.php</em> "
+"file in the <em>sites</em> folder.</li><li>To upgrade an existing "
+"installation, proceed to the <a href=\"@base-url/update.php\">update script</"
+"a>.</li><li>View your <a href=\"@base-url\">existing site</a>.</li></ul>"
+msgstr ""
+"<ul><li>Да поново почнете, морате испразнити вашу постојећу базу података.</"
+"li><li>Да инсталирате у другу базу података, измените одговарајућу "
+"<em>settings.php</em> датотеку у директоријуму <em>sites</em>.</li><li> Да "
+"надоградите постојећу инсталацију, наставите на <a href=\"@base-url/update."
+"php\">скрипта за ажурирање</a>.</li><li>Видите Ваш <a href=\"@base-url"
+"\">постојећи сајт</a>.</li></ul>"
+
+#: install.php:657
+msgid "Installing @drupal"
+msgstr "Инсталира @drupal"
+
+#: install.php:658
+msgid "The installation has encountered an error."
+msgstr "Инсталација је наишла на грешку."
+
+#: install.php:956,714
+msgid "Configure site"
+msgstr "Конфигурација сајта."
+
+#: install.php:720
+msgid ""
+"All necessary changes to %dir and %file have been made, so you should remove "
+"write permissions to them now in order to avoid security risks. If you are "
+"unsure how to do so, please consult the <a href=\"@handbook_url\">on-line "
+"handbook</a>."
+msgstr ""
+"Све неопходне промене над директоријумом %dir и датотеком %file су "
+"направљене, тако да сада треба да уклоните дозволе уписа у њих како бисте "
+"избегли безбедносни ризик. Ако нисте сигурни како то да урадите, молим "
+"опогледајте <a href=\"@handbook_url\">упутство</a>."
+
+#: install.php:723
+msgid ""
+"All necessary changes to %dir and %file have been made. They have been set "
+"to read-only for security."
+msgstr ""
+"Све неопходне промене над директоријумом %dir и датотеком %file су "
+"направљене. Они имају само дозволу читања из безбедносних разлога."
+
+#: install.php:731; modules/system/system.admin.inc:1675;
+#: modules/system/system.js:0
+msgid "Your server has been successfully tested to support this feature."
+msgstr "Ваш сервер је успешно тестиран да ли подржава ову опцију."
+
+#: install.php:731; modules/system/system.js:0
+msgid ""
+"Your system configuration does not currently support this feature. The <a "
+"href=\"http://drupal.org/node/15365\">handbook page on Clean URLs</a> has "
+"additional troubleshooting information."
+msgstr ""
+"Ваша конфигурација система тренутно не подржава ову могућност. <a href="
+"\"http://drupal.org/node/15365\">Упутство о чистим УРЛ-овима </a> има "
+"информације о уобичајеним проблемима и грешкама."
+
+#: install.php:731; modules/system/system.js:0
+msgid "Testing clean URLs..."
+msgstr "Тестирати чист УРЛ..."
+
+#: install.php:796
+msgid "@drupal installation complete"
+msgstr "Инсталација @drupal-а је завршена."
+
+#: install.php:798
+msgid "Congratulations, @drupal has been successfully installed."
+msgstr "Честитамо, @drupal је успешно инсталиран."
+
+#: install.php:799
+msgid ""
+"Please review the messages above before continuing on to <a href=\"@url"
+"\">your new site</a>."
+msgstr ""
+"Молим прегледајте ниже наведене поруке пре него што наставите на <a href="
+"\"@url\">ваш нови сајт</a>."
+
+#: install.php:799
+msgid "You may now visit <a href=\"@url\">your new site</a>."
+msgstr "Сада можете посетити <a href=\"@url\">ваш нови сајт</a>."
+
+#: install.php:841
+msgid "Installed %module module."
+msgstr "Инсталиран је модул %module."
+
+#: install.php:901
+msgid ""
+"The @drupal installer requires that you create a settings file as part of "
+"the installation process.\n"
+"<ol>\n"
+"<li>Copy the %default_file file to %file.</li>\n"
+"<li>Change file permissions so that it is writable by the web server. If you "
+"are unsure how to grant file permissions, please consult the <a href="
+"\"@handbook_url\">on-line handbook</a>.</li>\n"
+"</ol>\n"
+"More details about installing Drupal are available in INSTALL.txt."
+msgstr ""
+"@drupal инсталациона скрипта захтева да креирате датотеку параметара као део "
+"инсталационог процеса. \r\n"
+"<ol>\r\n"
+"<li>Копирајте датотеку %default_file у %file.</li>\r\n"
+"<li>Промените дозволе датотеке тако да веб сервер има дозволу уписа у њу. "
+"Ако нисте сигурни како се додељују дозволе датотекама, погледајте у <a href="
+"\"@handbook_url\">приручнику</a>.</li>\r\n"
+"</ol>\r\n"
+"Више детаља о инсталацији Друпала имате у датотеци INSTALL.txt."
+
+#: install.php:909
+msgid ""
+"The @drupal installer requires write permissions to %file during the "
+"installation process. If you are unsure how to grant file permissions, "
+"please consult the <a href=\"@handbook_url\">on-line handbook</a>."
+msgstr ""
+"@drupal инсталациона скрипта захтева дозволе уписа за датотеку %file током "
+"процеса инсталације. Ако нисте сигурни како се додељују дозволе уписа, "
+"погледајте <a href=\"@handbook_url\">приручник</a>."
+
+#: includes/install.inc:728; install.php:936,924
+msgid "Currently using !item !version"
+msgstr "Тренутно користи !item !version."
+
+#: install.php:950
+msgid "Choose profile"
+msgstr "Одабери профил"
+
+#: install.php:952
+msgid "Verify requirements"
+msgstr "Провери захтеве система"
+
+#: install.php:953
+msgid "Set up database"
+msgstr "Подеси базу података"
+
+#: install.php:954
+msgid "Install profile"
+msgstr "Инсталирај профил"
+
+#: install.php:955
+msgid "Set up translations"
+msgstr "Подеси преводе"
+
+#: install.php:967
+msgid "Install site"
+msgstr "Инсталирај сајт"
+
+#: install.php:987
+msgid "Finish translations"
+msgstr "Заврши преводе"
+
+#: install.php:992
+msgid "Finished"
+msgstr "Завршено"
+
+#: install.php:1009
+msgid "To configure your website, please provide the following information."
+msgstr ""
+"Да конфигуришете вашу веб презентацију, молим обезбедите следеће информације."
+
+#: install.php:1014; modules/system/system.module:379
+msgid "Site information"
+msgstr "Подаци о сајту"
+
+#: install.php:1019; modules/system/system.admin.inc:378
+msgid "Site name"
+msgstr "Име сајта"
+
+#: install.php:1025
+msgid "Site e-mail address"
+msgstr "Мејл адреса сајта"
+
+#: install.php:1027; modules/system/system.admin.inc:1138
+msgid ""
+"The <em>From</em> address in automated e-mails sent during registration and "
+"new password requests, and other notifications. (Use an address ending in "
+"your site's domain to help prevent this e-mail being flagged as spam.)"
+msgstr ""
+"Са ове адресе се шаљу аутоматски мејлови приликом регистрације и тражења "
+"нове лозинке, као и остала обавештења. Користите једну адресу на крају вашег "
+"домена вашег сајта како сајт не би сматрао ове мејлове за спам."
+
+#: install.php:1033
+msgid "Administrator account"
+msgstr "Администраторски налог"
+
+#: install.php:1038
+msgid ""
+"The administrator account has complete access to the site; it will "
+"automatically be granted all permissions and can perform any administrative "
+"activity. This will be the only account that can perform certain activities, "
+"so keep its credentials safe."
+msgstr ""
+"Администраторски налог је завршио приступ сајту; он ће аутоматски добити све "
+"дозволе и може изводити било какве администраторске активнсоти. Ово ће бити "
+"једини налог који може да обави неке активности, зато његове податке чувајте "
+"на сигурном."
+
+#: modules/node/node.module:2692,2683; install.php:1043;
+#: modules/user/user.admin.inc:907,790,745,134;
+#: modules/user/user.module:1444,1246,651
+msgid "Username"
+msgstr "Корисничко име"
+
+#: install.php:1045; modules/user/user.module:1447
+msgid ""
+"Spaces are allowed; punctuation is not allowed except for periods, hyphens, "
+"and underscores."
+msgstr ""
+"Празна места су дозвољена; а од знакова су дозвољени само доња црта, цртица "
+"и тачка."
+
+#: install.php:1051; modules/system/system.admin.inc:1136;
+#: modules/user/user.module:1452
+msgid "E-mail address"
+msgstr "Е-адреса"
+
+#: install.php:1053
+msgid ""
+"All e-mails from the system will be sent to this address. The e-mail address "
+"is not made public and will only be used if you wish to receive a new "
+"password or wish to receive certain news or notifications by e-mail."
+msgstr ""
+"Све системске е-поруке биће вам послате на ову адресу. Е-адреса није јавно "
+"доступна и биће коришћена једино уколико желите да добијете нову лозинку или "
+"уколико желите да добијате извесне вести или обавештења са сајта."
+
+#: install.php:1066
+msgid "Server settings"
+msgstr "Подешавања сервера"
+
+#: install.php:1071; modules/system/system.admin.inc:1496
+msgid "Default time zone"
+msgstr "Подразумевана временска зона"
+
+#: install.php:1074
+msgid ""
+"By default, dates in this site will be displayed in the chosen time zone."
+msgstr ""
+"Подразумевано, датуми ће на овом мрежном месту бити приказани у изабраној "
+"временској зони."
+
+#: install.php:1080; modules/system/system.admin.inc:1658;
+#: modules/system/system.module:457
+msgid "Clean URLs"
+msgstr "\"Чисти\" УРЛ-ови"
+
+#: modules/locale/locale.module:275;
+#: modules/comment/comment.module:585,553,501;
+#: modules/block/block.admin.inc:363; install.php:1082;
+#: modules/statistics/statistics.admin.inc:185;
+#: modules/statistics/statistics.module:255;
+#: modules/system/system.admin.inc:1660,1506,1333,1325,1307,1293,1276;
+#: modules/system/system.install:60; modules/upload/upload.module:215;
+#: modules/user/user.admin.inc:430,412
+msgid "Disabled"
+msgstr "Искључено"
+
+#: modules/menu/menu.admin.inc:293,176; modules/locale/locale.module:275;
+#: modules/comment/comment.module:553; includes/locale.inc:90;
+#: install.php:1082; modules/statistics/statistics.admin.inc:185;
+#: modules/system/system.admin.inc:2204,2015,1660,1506,1333,1325,1293;
+#: modules/system/system.install:282; modules/upload/upload.module:215;
+#: modules/user/user.admin.inc:430,412
+msgid "Enabled"
+msgstr "Укључено"
+
+#: install.php:1083; modules/system/system.admin.inc:1661
+msgid ""
+"This option makes Drupal emit \"clean\" URLs (i.e. without <code>?q=</code> "
+"in the URL)."
+msgstr ""
+"Ова опција чини да Друпал емитује чисте УРЛ-ове (без <code>?q=</code>  у УРЛ-"
+"у)."
+
+#: install.php:1092; modules/system/system.install:293
+msgid "Update notifications"
+msgstr "Ажурирај обавештавање"
+
+#: install.php:1093
+msgid "Check for updates automatically"
+msgstr "Аутоматски провери да ли има новија верзија."
+
+#: install.php:1095
+msgid ""
+"With this option enabled, Drupal will notify you when new releases are "
+"available. This will significantly enhance your site's security and is "
+"<strong>highly recommended</strong>. This requires your site to periodically "
+"send anonymous information on its installed components to <a href=\"@drupal"
+"\">drupal.org</a>. For more information please see the <a href=\"@update"
+"\">update notification information</a>."
+msgstr ""
+"Када је укључена ова опција, Друпал ће Вас обавестити када су на располагању "
+"нове верзије програма. Ово ће значајно повећати безбедност вашег сајта и "
+"зато ову опцију <strong>топло препоручујемо</strong>. Ово захтева да ваш "
+"сајт с времена на време шаље анонимне информације о својим инсталираним "
+"компонентама на адресу <a href=\"@drupal\">drupal.org</a>. За више "
+"информација погледајте <a href=\"@update\">обавештавање о закрпама</a>."
+
+#: includes/unicode.inc:86; includes/batch.inc:101
+msgid "Error"
+msgstr "Грешка"
+
+#: includes/database.mysqli.inc:29; includes/database.mysql.inc:26
+msgid "MySQL database"
+msgstr "MySQL база података"
+
+#: includes/database.mysqli.inc:35; includes/database.mysql.inc:32
+msgid "Your MySQL Server is too old. Drupal requires at least MySQL %version."
+msgstr ""
+"Ваш MySQL Server је превише стар. Drupal захтева најмање MySQL верзију %"
+"version."
+
+#: includes/database.pgsql.inc:23
+msgid "PostgreSQL database"
+msgstr "PostgreSQL база података"
+
+#: includes/database.pgsql.inc:29
+msgid ""
+"Your PostgreSQL Server is too old. Drupal requires at least PostgreSQL %"
+"version."
+msgstr ""
+"Ваш PostgreSQL сервер је превише стар. Друпал захтева најмање PostgreSQL "
+"верзију %version."
+
+#: includes/database.pgsql.inc:406
+msgid ""
+"Your PostgreSQL database is set up with the wrong character encoding (%"
+"encoding). It is possible it will not work as expected. It is advised to "
+"recreate it with UTF-8/Unicode encoding. More information can be found in "
+"the <a href=\"@url\">PostgreSQL documentation</a>."
+msgstr ""
+"Ваша PostgreSQL база података је постављена на погрешан кодни распоред (%"
+"encoding). Могуће је да неће радити како треба. Саветујемо Вам да је поново "
+"креирате са  UTF-8/Unicode кодним распоредом. Више информација можете наћи "
+"на <a href=\"@url\">PostgreSQL документација</a>."
+
+#: includes/file.inc:109; modules/system/system.install:198
+msgid "The directory %directory does not exist."
+msgstr "Директоријум %directory не постоји."
+
+#: includes/form.inc:679
+msgid "!name field is required."
+msgstr "Морате да попуните поље !name."
+
+#: includes/form.inc:684
+msgid ""
+"!name cannot be longer than %max characters but is currently %length "
+"characters long."
+msgstr ""
+"!name не може имати више од %max карактера али је тренутно дугачко %length "
+"карактера."
+
+#: modules/filter/filter.module:537; includes/form.inc:704,698
+msgid ""
+"An illegal choice has been detected. Please contact the site administrator."
+msgstr "Откривен је недозвољен избор. Молим обратите се администратору сајта."
+
+#: includes/form.inc:2193
+msgid "This field is required."
+msgstr "Морате да попуните ово поље."
+
+#: includes/form.inc:2201,2198
+msgid "!title: !required"
+msgstr "!title: !required"
+
+#: modules/node/node.admin.inc:362; includes/form.inc:2438
+msgid "Processing"
+msgstr "Обрада"
+
+#: includes/form.inc:2439
+msgid "Initializing."
+msgstr "Иницијализација."
+
+#: includes/form.inc:2440
+msgid "Remaining @remaining of @total."
+msgstr "Преостало @remaining од @total."
+
+#: includes/form.inc:2441
+msgid "An error has occurred."
+msgstr "Догодила се грешка."
+
+#: includes/form.inc:2514
+msgid "Please continue to <a href=\"@error_url\">the error page</a>"
+msgstr "Молимо вас наставите ка <a href=\"@error_url\">страници са грешком</a>"
+
+#: includes/install.inc:238
+msgid "Failed to modify %settings, please verify the file permissions."
+msgstr ""
+"Није успела промена параметара %settings, молим проверите дозволе над "
+"датотеком."
+
+#: includes/install.inc:242
+msgid "Failed to open %settings, please verify the file permissions."
+msgstr ""
+"Није успело отварање датотеке параметара %settings, молим проверите дозволе "
+"над датотеком."
+
+#: includes/install.inc:296
+msgid ""
+"The %module module is required but was not found. Please move it into the "
+"<em>modules</em> subdirectory."
+msgstr ""
+"%module модуо је  обавезан али није пронађен. Молим, пребаците га у "
+"поддиректоријум <em>modules</em>."
+
+#: includes/install.mysql.inc:24
+msgid "PHP MySQL support not enabled."
+msgstr "PHP MySQL подршка није укључена."
+
+#: includes/install.mysqli.inc:39; includes/install.mysql.inc:44
+msgid ""
+"Failed to connect to your MySQL database server. MySQL reports the following "
+"message: %error.<ul><li>Are you sure you have the correct username and "
+"password?</li><li>Are you sure that you have typed the correct database "
+"hostname?</li><li>Are you sure that the database server is running?</li></"
+"ul>For more help, see the <a href=\"http://drupal.org/node/258"
+"\">Installation and upgrading handbook</a>. If you are unsure what these "
+"terms mean you should probably contact your hosting provider."
+msgstr ""
+"Неуспела конекција на Ваш MySQL сервер базе података. MySQL пријављује "
+"следећу поруку: %error.<ul><li>Сигурни сте да сте укуцали исправно "
+"корисничко име и лозинку?</li><li>Сигурни сте да сте укуцали тачан назив "
+"рачунара на којем се налази база података?</li><li>Јесте ли сигурни да је "
+"сервер базе података покренут?</li><li>Јесте ли сигурни да сте укуцали тачан "
+"назив базе података?</li></ul>За више информација, погледајте <a href="
+"\"http://drupal.org/node/258\">Приручник за инсталацију и надоградњу</a>. "
+"Ако нисте сигурни шта све ови термини значе требало би да контактирате свог "
+"провајдера."
+
+#: includes/install.mysqli.inc:45; includes/install.mysql.inc:50
+msgid ""
+"Failed to select your database on your MySQL database server, which means "
+"the connection username and password are valid, but there is a problem "
+"accessing your data. MySQL reports the following message: %error.<ul><li>Are "
+"you sure you have the correct database name?</li><li>Are you sure the "
+"database exists?</li><li>Are you sure the username has permission to access "
+"the database?</li></ul>For more help, see the <a href=\"http://drupal.org/"
+"node/258\">Installation and upgrading handbook</a>. If you are unsure what "
+"these terms mean you should probably contact your hosting provider."
+msgstr ""
+"Неуспео одабир ваше базе података на Вашем MySQL серверу базе података, што "
+"значи да су корисничко име и лозинка за конекцију исправни али је проблем са "
+"приступом Вашим подацима.. MySQL пријављује следећу поруку: %error."
+"<ul><li>Сигурно сте навели тачно име базе података?</li><li>Are you sure the "
+"database exists?</li><li>Сигурни сте да овај корисник има дозволу да "
+"приступи бази?</li></ul>За више информација погледајте <a href=\"http://"
+"drupal.org/node/258\">Приручник за инсталацију и надоградњ</a>. Ако нисте "
+"сигурни шта све ови термини значе требало би да контактирате свог "
+"провајдера.."
+
+#: includes/install.mysqli.inc:55; includes/install.mysql.inc:60
+msgid ""
+"Failed to create a test table on your MySQL database server with the command "
+"%query. MySQL reports the following message: %error.<ul><li>Are you sure the "
+"configured username has the necessary MySQL permissions to create tables in "
+"the database?</li></ul>For more help, see the <a href=\"http://drupal.org/"
+"node/258\">Installation and upgrading handbook</a>. If you are unsure what "
+"these terms mean you should probably contact your hosting provider."
+msgstr ""
+"Неуспео покушај креирања тест табеле на Вашем MySQL серверу базе података са "
+"командом %query. MySQL пријављује следећу поруку: %error.<ul><li> Јесте ли "
+"сигурни да овај корисник има неопходне  MySQL  дозволе да креира табеле у "
+"бази података ?</li></ul>За више информација, погледајте <a href=\"http://"
+"drupal.org/node/258\">Приручник о инсталацији и надоградњи</a>. Ако нисте "
+"сигурни шта све ови термини значе контактирајте Вашег провајдера."
+
+#: includes/install.mysqli.inc:66; includes/install.mysql.inc:71
+msgid ""
+"Failed to insert a value into a test table on your MySQL database server. We "
+"tried inserting a value with the command %query and MySQL reported the "
+"following error: %error."
+msgstr ""
+"Неуспео покушај убацивања вредности у тест табелу Ваше MySQL  базе података. "
+"Пробали смо да убацимо вредност помоћу команде %query и MySQL је пријавио "
+"следећу грешку: %error."
+
+#: includes/install.mysqli.inc:77; includes/install.mysql.inc:82
+msgid ""
+"Failed to update a value in a test table on your MySQL database server. We "
+"tried updating a value with the command %query and MySQL reported the "
+"following error: %error."
+msgstr ""
+"Неупео покушај мењања вредности у тест табели Ваше MySQL базе података. "
+"Пробали смо да мењамо вредност помоћу команде %query и MySQL је пријавио "
+"следећу грешку: %error."
+
+#: includes/install.mysqli.inc:88; includes/install.mysql.inc:93
+msgid ""
+"Failed to delete a value from a test table on your MySQL database server. We "
+"tried deleting a value with the command %query and MySQL reported the "
+"following error: %error."
+msgstr ""
+"Неупео покушај брисања вредности из тест табеле Ваше MySQL базе података. "
+"Пробали смо да обришемо вредност помоћу команде %query и MySQL је пријавио "
+"следећу грешку: %error."
+
+#: includes/install.mysqli.inc:99; includes/install.mysql.inc:104
+msgid ""
+"Failed to drop a test table from your MySQL database server. We tried "
+"dropping a table with the command %query and MySQL reported the following "
+"error %error."
+msgstr ""
+"Неупео покушај да се одбаци тест табела из  Ваше MySQLбазе података. Пробали "
+"смо да одбацимо табелу помоћу команде %query и MySQL је пријавио следећу "
+"грешку: %error."
+
+#: includes/install.mysqli.inc:24
+msgid "PHP MySQLi support not enabled."
+msgstr "PHP MySQLi подршка није укључена."
+
+#: includes/install.pgsql.inc:24
+msgid "PHP PostgreSQL support not enabled."
+msgstr "PHP PostgreSQL подршка није укључена."
+
+#: includes/install.pgsql.inc:51
+msgid ""
+"Failed to connect to your PostgreSQL database server. PostgreSQL reports the "
+"following message: %error.<ul><li>Are you sure you have the correct username "
+"and password?</li><li>Are you sure that you have typed the correct database "
+"hostname?</li><li>Are you sure that the database server is running?</"
+"li><li>Are you sure you typed the correct database name?</li></ul>For more "
+"help, see the <a href=\"http://drupal.org/node/258\">Installation and "
+"upgrading handbook</a>. If you are unsure what these terms mean you should "
+"probably contact your hosting provider."
+msgstr ""
+"Неуспела конекција на Ваш PostgreSQL сервер базе података. PostgreSQL "
+"пријављује следећу поруку: %error.<ul><li>Сигурни сте да сте укуцали "
+"исправно корисничко име и лозинку?</li><li>Сигурни сте да сте укуцали тачан "
+"назив рачунара на којем се налази база података?</li><li>Јесте ли сигурни да "
+"је сервер базе података покренут?</li><li>Јесте ли сигурни да сте укуцали "
+"тачан назив базе података?</li></ul>За више информација, погледајте <a href="
+"\"http://drupal.org/node/258\">Приручник за инсталацију и надоградњу</a>. "
+"Ако нисте сигурни шта све ови термини значе требало би да контактирате свог "
+"провајдера."
+
+#: includes/install.pgsql.inc:61
+msgid ""
+"Failed to create a test table on your PostgreSQL database server with the "
+"command %query. PostgreSQL reports the following message: %error.<ul><li>Are "
+"you sure the configured username has the necessary PostgreSQL permissions to "
+"create tables in the database?</li></ul>For more help, see the <a href="
+"\"http://drupal.org/node/258\">Installation and upgrading handbook</a>. If "
+"you are unsure what these terms mean you should probably contact your "
+"hosting provider."
+msgstr ""
+"Неуспео покушај креирања тест табеле на Вашем PostgreSQL серверу базе "
+"података са командом %query. PostgreSQL пријављује следећу поруку: %error."
+"<ul><li> Јесте ли сигурни да овај корисник има неопходне  PostgreSQL дозволе "
+"да креира табеле у бази података ?</li></ul>За више информација, погледајте "
+"<a href=\"http://drupal.org/node/258\">Приручник о инсталацији и надоградњи</"
+"a>. Ако нисте сигурни шта све ови термини значе контактирајте Вашег "
+"провајдера."
+
+#: includes/install.pgsql.inc:72
+msgid ""
+"Failed to insert a value into a test table on your PostgreSQL database "
+"server. We tried inserting a value with the command %query and PostgreSQL "
+"reported the following error: %error."
+msgstr ""
+"Неуспео покушај убацивања вредности у тест табелу Ваше PostgreSQL  базе "
+"података. Пробали смо да убацимо вредност помоћу команде %query и PostgreSQL "
+"је пријавио следећу грешку: %error."
+
+#: includes/install.pgsql.inc:83
+msgid ""
+"Failed to update a value in a test table on your PostgreSQL database server. "
+"We tried updating a value with the command %query and PostgreSQL reported "
+"the following error: %error."
+msgstr ""
+"Неупео покушај мењања вредности у тест табели Ваше PostgreSQL базе података. "
+"Пробали смо да мењамо вредност помоћу команде %query и PostgreSQL је "
+"пријавио следећу грешку: %error."
+
+#: includes/install.pgsql.inc:94
+msgid ""
+"Failed to lock a test table on your PostgreSQL database server. We tried "
+"locking a table with the command %query and PostgreSQL reported the "
+"following error: %error."
+msgstr ""
+"Неупео покушај заључавања тест табеле у Вашој PostgreSQL бази података. "
+"Пробали смо да закључамо табелу помоћу команде %query и PostgreSQL је "
+"пријавио следећу грешку: %error."
+
+#: includes/install.pgsql.inc:105
+msgid ""
+"Failed to unlock a test table on your PostgreSQL database server. We tried "
+"unlocking a table with the command %query and PostgreSQL reported the "
+"following error: %error."
+msgstr ""
+"Неупео покушај откључавања тест табеле у Вашој PostgreSQL бази података. "
+"Пробали смо да откључамо табелу помоћу команде %query и PostgreSQL је "
+"пријавио следећу грешку: %error."
+
+#: includes/install.pgsql.inc:116
+msgid ""
+"Failed to delete a value from a test table on your PostgreSQL database "
+"server. We tried deleting a value with the command %query and PostgreSQL "
+"reported the following error: %error."
+msgstr ""
+"Неупео покушај брисања вредности из тест табеле Ваше PostgreSQL базе "
+"података. Пробали смо да обришемо вредност помоћу команде %query и "
+"PostgreSQL је пријавио следећу грешку: %error."
+
+#: includes/install.pgsql.inc:127
+msgid ""
+"Failed to drop a test table from your PostgreSQL database server. We tried "
+"dropping a table with the command %query and PostgreSQL reported the "
+"following error %error."
+msgstr ""
+"Неупео покушај да се одбаци тест табела из  Ваше PostgreSQL базе података. "
+"Пробали смо да одбацимо табелу помоћу команде %query и PostgreSQL је "
+"пријавио следећу грешку: %error."
+
+#: includes/locale.inc:1078
+msgid ""
+"The translation import failed, because the file %filename could not be read."
+msgstr "Увоз превода није успео, јер датотека %filename није читљива."
+
+#: includes/locale.inc:1107
+msgid ""
+"The translation file %filename contains an error: \"msgstr\" was expected "
+"but not found on line %line."
+msgstr ""
+"Датотека превода %filename садржи грешку: \"msgstr\" је очекиван али није "
+"пронађен у реду %line."
+
+#: includes/locale.inc:1113
+msgid ""
+"The translation file %filename contains an error: \"msgid_plural\" was "
+"expected but not found on line %line."
+msgstr ""
+"Датотека превода %filename садржи грешку: \"msgid_plural\" је очекиван али "
+"није пронађен у реду %line."
+
+#: includes/locale.inc:1180,1171,1157,1149,1137,1119
+msgid "The translation file %filename contains a syntax error on line %line."
+msgstr "Датотека превода %filename садржи грешку синтаксе у реду %line."
+
+#: includes/locale.inc:1131
+msgid ""
+"The translation file %filename contains an error: \"msgid\" is unexpected on "
+"line %line."
+msgstr ""
+"Датотека превода %filename садржи грешку: \"msgid\" није очекиван у реду %"
+"line."
+
+#: includes/locale.inc:1145
+msgid ""
+"The translation file %filename contains an error: \"msgstr[]\" is unexpected "
+"on line %line."
+msgstr ""
+"Датотека превода %filename садржи грешку: \"msgstr[]\" није очекиван у реду %"
+"line."
+
+#: includes/locale.inc:1165
+msgid ""
+"The translation file %filename contains an error: \"msgstr\" is unexpected "
+"on line %line."
+msgstr ""
+"Датотека превода %filename садржи грешку: \"msgstr\" није очекиван у реду %"
+"line."
+
+#: includes/locale.inc:1193
+msgid ""
+"The translation file %filename contains an error: there is an unexpected "
+"string on line %line."
+msgstr ""
+"Датотека превода %filename садржи грешку: неочекивани низ карактера се "
+"налази у реду %line."
+
+#: includes/locale.inc:1204
+msgid "The translation file %filename ended unexpectedly at line %line."
+msgstr "Датотека превода %filename је неочекивано прекинута у реду %line."
+
+#: includes/locale.inc:2576
+msgid "Importing interface translations"
+msgstr "Учитавање превода интерфејса"
+
+#: includes/locale.inc:2577
+msgid "Starting import"
+msgstr "Почетак учитавања"
+
+#: includes/locale.inc:2578
+msgid "Error importing interface translations"
+msgstr "Грешка при учитавању превода интерфејса"
+
+#: includes/theme.maintenance.inc:122
+msgid ""
+"The following errors must be resolved before you can continue the "
+"installation process"
+msgstr ""
+"Следеће грешке морају бити отклоњена пре него што наставите процес "
+"инсталације."
+
+#: includes/theme.maintenance.inc:122
+msgid ""
+"The following error must be resolved before you can continue the "
+"installation process"
+msgstr ""
+"Следећа грешка мора бити отклоњена пре него што наставите процес инсталације."
+
+#: includes/theme.maintenance.inc:125
+msgid "Please check the error messages and <a href=\"!url\">try again</a>."
+msgstr ""
+"Молим проверите поруке о грешкама и  <a href=\"!url\">пробајте опет</a>."
+
+#: includes/theme.maintenance.inc:130
+msgid "The following installation warnings should be carefully reviewed"
+msgstr "Следећа упозорења приликом инсталације морају се пажљиво прегледати."
+
+#: includes/theme.maintenance.inc:130
+msgid "The following installation warning should be carefully reviewed"
+msgstr "Следеће упозорења приликом инсталације мора се пажљиво прегледати."
+
+#: includes/theme.maintenance.inc:137
+msgid ""
+"The following installation warnings should be carefully reviewed, but in "
+"most cases may be safely ignored"
+msgstr ""
+"Следећа упозорења приликом инсталације морају се пажљиво прегледати, али у "
+"већини случајева могу се игнорисати без последица."
+
+#: includes/theme.maintenance.inc:137
+msgid ""
+"The following installation warning should be carefully reviewed, but in most "
+"cases may be safely ignored"
+msgstr ""
+"Следеће упозорења приликом инсталације мора се пажљиво прегледати, али у "
+"већини случајева може се игнорисати без последица."
+
+#: includes/unicode.inc:48
+msgid ""
+"The PCRE library in your PHP installation is outdated. This will cause "
+"problems when handling Unicode text. If you are running PHP 4.3.3 or higher, "
+"make sure you are using the PCRE library supplied by PHP. Please refer to "
+"the <a href=\"@url\">PHP PCRE documentation</a> for more information."
+msgstr ""
+"PCRE библиотека у Вашој PHP инсталацији је застарела. Ово ће створити "
+"проблеме приликом управљања Unicode текстовима. Ако имате  PHP 4.3.3 или "
+"новију верзију, побрините се да користите  PCRE библиотеку која се "
+"испоручује са  PHP-ом. Молим, погледајте <a href=\"@url\">PHP PCRE "
+"documentation</a> за детаљније информације."
+
+#: includes/unicode.inc:53
+msgid ""
+"Operations on Unicode strings are emulated on a best-effort basis. Install "
+"the <a href=\"@url\">PHP mbstring extension</a> for improved Unicode support."
+msgstr ""
+"Операције над Unicode низовима карактера су  емулиране најбоље што се могло."
+"Инсталирајте <a href=\"@url\">PHP mbstring extension</a> за побољшану "
+"Unicode подршку."
+
+#: includes/unicode.inc:58
+msgid ""
+"Multibyte string function overloading in PHP is active and must be disabled. "
+"Check the php.ini <em>mbstring.func_overload</em> setting. Please refer to "
+"the <a href=\"@url\">PHP mbstring documentation</a> for more information."
+msgstr ""
+"Преклапање функција вишебајтног низа карактера у PHP-у је укључено. Мораћете "
+"да га искључите. Проверите подешавања за <em>mbstring.func_overload</em> у "
+"датотеци php.ini. Погледајте <a href=\"@url\">документацију за PHP mbstring</"
+"a> уколико желите више информација."
+
+#: includes/unicode.inc:61
+msgid ""
+"Multibyte string input conversion in PHP is active and must be disabled. "
+"Check the php.ini <em>mbstring.encoding_translation</em> setting. Please "
+"refer to the <a href=\"@url\">PHP mbstring documentation</a> for more "
+"information."
+msgstr ""
+"Превођења вишебајтног низа карактера кодног распореда у PHP-у је укључено. "
+"Мораћете да га искључите. Проверите подешавања за <em>mbstring."
+"encoding_translation</em> у датотеци php.ini. Погледајте <a href=\"@url"
+"\">документацију за PHP mbstring</a> уколико желите више информација."
+
+#: includes/unicode.inc:64
+msgid ""
+"Multibyte string input conversion in PHP is active and must be disabled. "
+"Check the php.ini <em>mbstring.http_input</em> setting. Please refer to the "
+"<a href=\"@url\">PHP mbstring documentation</a> for more information."
+msgstr ""
+"Конверзија вишебајтних улазних низова карактера у PHP-у је укључена. "
+"Мораћете да је искључите. Проверите подешавања за <em>mbstring.http_input</"
+"em> у датотеци php.ini. Погледајте <a href=\"@url\">документацију за PHP "
+"mbstring</a> уколико желите више информација."
+
+#: includes/unicode.inc:67
+msgid ""
+"Multibyte string output conversion in PHP is active and must be disabled. "
+"Check the php.ini <em>mbstring.http_output</em> setting. Please refer to the "
+"<a href=\"@url\">PHP mbstring documentation</a> for more information."
+msgstr ""
+"Конверзија вишебајтних излазних низова карактера у PHP-у је укључена. "
+"Мораћете да је искључите. Проверите подешавања за <em>mbstring.http_output</"
+"em> у датотеци php.ini. Погледајте <a href=\"@url\">документацију за PHP "
+"mbstring</a> уколико желите више информација."
+
+#: includes/unicode.inc:84
+msgid "Standard PHP"
+msgstr "Стандардни PHP"
+
+#: includes/unicode.inc:85
+msgid "PHP Mbstring Extension"
+msgstr "Mbstring додатак PHP-а"
+
+#: includes/unicode.inc:96
+msgid "Unicode library"
+msgstr "Unicode библиотека"
+
+#: modules/menu/menu.install:12; modules/user/user.module:735,685
+msgid "Navigation"
+msgstr "Навигација"
+
+#: modules/menu/menu.install:12
+msgid ""
+"The navigation menu is provided by Drupal and is the main interactive menu "
+"for any site. It is usually the only menu that contains personalized links "
+"for authenticated users, and is often not even visible to anonymous users."
+msgstr ""
+"Навигациони мени даје Друпал и он је главни интерактивни мени за сајт. То је "
+"обично једини мени који садржи персоналне везе за пријављене кориснике, и "
+"често није ни видљив за анонимне кориснике."
+
+#: modules/menu/menu.install:13; modules/system/system.admin.inc:385
+msgid "Primary links"
+msgstr "Главне везе"
+
+#: modules/menu/menu.install:13
+msgid ""
+"Primary links are often used at the theme layer to show the major sections "
+"of a site. A typical representation for primary links would be tabs along "
+"the top."
+msgstr ""
+"Главне везе се често користе у слоју мотива да прикажу главне делове сајта. "
+"Типичан пример главних веза био би табулатор на врху."
+
+#: modules/menu/menu.install:14; modules/system/system.admin.inc:386
+msgid "Secondary links"
+msgstr "Споредне везе"
+
+#: modules/menu/menu.install:14
+msgid ""
+"Secondary links are often used for pages like legal notices, contact "
+"details, and other secondary navigation items that play a lesser role than "
+"primary links"
+msgstr ""
+"Споредне везе се често користе за странице као што су правне напомене, "
+"контакт детаљи и друге споредне навигационе ставке које имају мању улогу "
+"него главне везе."
+
+#: modules/statistics/statistics.admin.inc:51,15;
+#: modules/statistics/statistics.pages.inc:47;
+#: profiles/default/default.profile:100
+msgid "Page"
+msgstr "Страна"
+
+#: modules/system/system.module:410; modules/system/system.install:184
+msgid "File system"
+msgstr "Фајл систем"
+
+#: modules/system/system.module:507; modules/system/system.install:36
+msgid "PHP"
+msgstr "PHP"
+
+#: modules/system/system.install:20
+msgid "Drupal"
+msgstr "Друпал"
+
+#: modules/system/system.install:30
+msgid "Web server"
+msgstr "Веб сервер"
+
+#: modules/system/system.install:40
+msgid ""
+"Your PHP installation is too old. Drupal requires at least PHP %version."
+msgstr ""
+"Ваша PHP инсталација је сувише стара. Друпал захтева најмање %version "
+"верзију PHP-а."
+
+#: modules/system/system.install:46
+msgid "PHP register globals"
+msgstr "PHP регистрација глобалних променљивих"
+
+#: modules/system/system.install:55
+msgid ""
+"<em>register_globals</em> is enabled. Drupal requires this configuration "
+"directive to be disabled. Your site may not be secure when "
+"<em>register_globals</em> is enabled. The PHP manual has instructions for <a "
+"href=\"http://php.net/configuration.changes\">how to change configuration "
+"settings</a>."
+msgstr ""
+"<em>register_globals</em> је укључено. Друпал захтева да ова конфигурациона "
+"директива буде искључена. Ваш сајт можда не би био безбедан када "
+"је<em>register_globals</em> укључено.  PHP упутство садржи објашњење<a href="
+"\"http://php.net/configuration.changes\">како да промените параметре "
+"конфигурације</a>."
+
+#: modules/system/system.install:57
+msgid "Enabled ('@value')"
+msgstr "Укључено ('@value')"
+
+#: modules/system/system.install:66
+msgid "PHP memory limit"
+msgstr "PHP меморијски лимит"
+
+#: modules/system/system.install:73
+msgid ""
+"Consider increasing your PHP memory limit to %memory_minimum_limit to help "
+"prevent errors in the installation process."
+msgstr ""
+"Размислите да повећате Ваш PHP меморијски лимит на %memory_minimum_limit да "
+"спречите појаву грешака у процесу инсталације."
+
+#: modules/system/system.install:76
+msgid ""
+"Consider increasing your PHP memory limit to %memory_minimum_limit to help "
+"prevent errors in the update process."
+msgstr ""
+"Размислите да повећате Ваш PHP меморијски лимит на %memory_minimum_limit да "
+"спречите појаву грешака у процесу aжурирања."
+
+#: modules/system/system.install:79
+msgid ""
+"Depending on your configuration, Drupal can run with a %memory_limit PHP "
+"memory limit. However, a %memory_minimum_limit PHP memory limit or above is "
+"recommended, especially if your site uses additional custom or contributed "
+"modules."
+msgstr ""
+"У зависности од Ваше конфигурације, Друпал може да ради са ПХП меморијским "
+"лимитом од %memory_limit. Међутим, препоручује се минимални ПХП меморијски "
+"лимит од %memory_minimum_limit,  нарочито ако Ваш сајт користи додатне "
+"корисничке или приложене модуле."
+
+#: modules/system/system.install:84
+msgid ""
+"Increase the memory limit by editing the memory_limit parameter in the file %"
+"configuration-file and then restart your web server (or contact your system "
+"administrator or hosting provider for assistance)."
+msgstr ""
+"Повећајте меморијски лимит тако што ћете променити memory_limit параметар у "
+"датотеци %configuration-file и онда поново покрените Ваш веб сервер (или "
+"контактирајте Вашег систем администратора или провајдера за помоћ)."
+
+#: modules/system/system.install:87
+msgid ""
+"Contact your system administrator or hosting provider for assistance with "
+"increasing your PHP memory limit."
+msgstr ""
+"Контактирајте Вашег систем администратора или провајдера око повећања ПХП "
+"меморијског лимита."
+
+#: modules/system/system.install:90
+msgid "See the <a href=\"@url\">Drupal requirements</a> for more information."
+msgstr ""
+"Погледајте <a href=\"@url\">Захтеви Друпала</a> за детаљније информације."
+
+#: modules/system/system.install:254,107
+msgid "Not protected"
+msgstr "Није заштићен"
+
+#: modules/system/system.install:112
+msgid ""
+"The directory %file is not protected from modifications and poses a security "
+"risk. You must change the directory's permissions to be non-writable. "
+msgstr ""
+"Директоријум %directory није заштићен од измена и представља безбедносну "
+"рупу. Морате променити дозволе на овом директоријуму тако да се у њуга не "
+"може уписивати. "
+
+#: modules/system/system.install:115
+msgid ""
+"The file %file is not protected from modifications and poses a security "
+"risk. You must change the file's permissions to be non-writable."
+msgstr ""
+"Датотека %file има дозволу уписа и представља безбедносну рупу. Морате "
+"променити дозволе на овој датотеци да се у њу не може уписивати."
+
+#: modules/system/system.install:261,120
+msgid "Protected"
+msgstr "Заштићен"
+
+#: modules/system/system.install:123
+msgid "Configuration file"
+msgstr "Фајл са поставкама"
+
+#: modules/system/system.install:133
+msgid ""
+"For more information, see the online handbook entry for <a href=\"@cron-"
+"handbook\">configuring cron jobs</a>."
+msgstr ""
+"За додатне информације, погледајте приручник за <a href=\"@cron-handbook"
+"\">конфигурисање cron послова</a>."
+
+#: modules/system/system.install:157
+msgid ""
+"Cron has not run. Please visit the <a href=\"@status\">status report</a> for "
+"more information."
+msgstr ""
+"Cron још није радио. Молим посетите страницу <a href=\"@status\">status "
+"report</a> за додатне информације."
+
+#: modules/system/system.install:162
+msgid "Never run"
+msgstr "Никад није покренут"
+
+#: modules/system/system.install:163
+msgid "Cron has not run."
+msgstr "Cron још није радио."
+
+#: modules/system/system.install:166
+msgid "Last run !time ago"
+msgstr "Последњи пут покренут пре !time"
+
+#: modules/system/system.install:169
+msgid "Cron has not run recently."
+msgstr "Cron није скоро покретан."
+
+#: modules/system/system.install:174
+msgid "Cron maintenance tasks"
+msgstr "Редовни (cron) задаци одржавања"
+
+#: modules/system/system.install:177
+msgid "You can <a href=\"@cron\">run cron manually</a>."
+msgstr "cron можете да покренете и <a href=\"@cron\">ручно</a>."
+
+#: modules/system/system.install:196
+msgid "Not writable"
+msgstr "Не може да се уписује"
+
+#: modules/system/system.install:201
+msgid "The directory %directory is not writable."
+msgstr "У директоријум %directory не може да се уписује."
+
+#: modules/system/system.install:205
+msgid ""
+"You may need to set the correct directory at the <a href=\"@admin-file-system"
+"\">file system settings page</a> or change the current directory's "
+"permissions so that it is writable."
+msgstr ""
+"Можда ћете морати да поставите исправни директоријум на <a href=\"@admin-"
+"file-system\">страници за параметре датотечког система</a> или да промените "
+"дозволе на вашем тренутном директоријуму тако да се у њега може уписивати."
+
+#: modules/system/system.install:210
+msgid ""
+"An automated attempt to create this directory failed, possibly due to a "
+"permissions problem. To proceed with the installation, either create the "
+"directory and modify its permissions manually, or ensure that the installer "
+"has the permissions to create it automatically. For more information, please "
+"see INSTALL.txt or the <a href=\"@handbook_url\">on-line handbook</a>."
+msgstr ""
+"Аутоматски покушај да се креира овај директоријум није успео, највероватније "
+"због проблема са дозволама. Да наставите са инсталацијом, или креирајте "
+"директоријум и ручно му промените дозволе, или се побрините да инсталациона "
+"скрипта има дозволу да га креира аутоматски. За више информација прочитајте "
+"INSTALL.txt или <a href=\"@handbook_url\">упутство</a>."
+
+#: modules/system/system.install:220
+msgid "Writable (<em>public</em> download method)"
+msgstr "Уписив (<em>јавни</em> метод за преузимање)"
+
+#: modules/system/system.install:223
+msgid "Writable (<em>private</em> download method)"
+msgstr "Уписив (<em>скривени</em> метод за преузимање)"
+
+#: modules/system/system.install:230
+msgid "Database updates"
+msgstr "Закрпе базе података"
+
+#: modules/system/system.install:232; modules/update/update.report.inc:82;
+#: modules/update/update.module:274
+msgid "Up to date"
+msgstr "Ажурно"
+
+#: modules/system/system.install:242; modules/update/update.module:265
+msgid "Out of date"
+msgstr "Застарео"
+
+#: modules/system/system.install:243
+msgid ""
+"Some modules have database schema updates to install. You should run the <a "
+"href=\"@update\">database update script</a> immediately."
+msgstr ""
+"Неко модули морају да инсталирају закрпе за шему базе података. Морате одмах "
+"покренути <a href=\"@update\">скрипту за ажурирање базе података</a>."
+
+#: modules/system/system.install:256
+msgid ""
+"The update.php script is accessible to everyone without authentication "
+"check, which is a security risk. You must change the $update_free_access "
+"value in your settings.php back to FALSE."
+msgstr ""
+"The update.php скрипта је на располагању свима без провере идентитета, што "
+"је безбедносни пропуст. Морате променити вредност за $update_free_access у "
+"Вашој скрипти settings.php на FALSE."
+
+#: modules/system/system.install:264
+msgid "Access to update.php"
+msgstr "Приступ  скрипти update.php"
+
+#: modules/system/system.install:275
+msgid "Not enabled"
+msgstr "Није укључено"
+
+#: modules/system/system.install:277
+msgid ""
+"Update notifications are not enabled. It is <strong>highly recommended</"
+"strong> that you enable the update status module from the <a href=\"@module"
+"\">module administration page</a> in order to stay up-to-date on new "
+"releases. For more information please read the <a href=\"@update\">Update "
+"status handbook page</a>."
+msgstr ""
+"Обавештавање о закрпама није укључено. <strong>Топло препоручујемо</"
+"strong>да укључите модуо за статус закрпа на <a href=\"@module\">страници за "
+"администрацију модула</a> како бисте остали у току нових верзија. За додатне "
+"информације прочитајте  <a href=\"@update\">Упутство за статус закрпа</a>."
+
+#: modules/system/system.install:286
+msgid "HTTP request status"
+msgstr "Статус HTTP захтева"
+
+#: modules/system/system.install:287
+msgid "Fails"
+msgstr "Греши"
+
+#: modules/system/system.install:289
+msgid ""
+"Your system or network configuration does not allow Drupal to access web "
+"pages, resulting in reduced functionality. This could be due to your "
+"webserver configuration or PHP settings, and should be resolved in order to "
+"download information about available updates, fetch aggregator feeds, sign "
+"in via OpenID, or use other network-dependent services."
+msgstr ""
+"Ваш ситем или мрежна конфигурација не дозвољава Срупалу да приступи веб "
+"страни, што смањује функционалност. Ово може да буде због конфигурације "
+"Вашег веб сервера или параметара PHP -а, и требало би да се исправи како би "
+"се преузимале информације о расположивим закрпама, преузимало напајање "
+"скупљача, пријавите се преко  OpenID-а или користите сервисе који зависе од "
+"мреже."
+
+#: profiles/default/default.profile:102
+msgid ""
+"A <em>page</em>, similar in form to a <em>story</em>, is a simple method for "
+"creating and displaying information that rarely changes, such as an \"About "
+"us\" section of a website. By default, a <em>page</em> entry does not allow "
+"visitor comments and is not featured on the site's initial home page."
+msgstr ""
+"Ставка <em>page</em>, слична по форми са ставком <em>story</em>, је идеална "
+"за прављење или приказивање садржаја који се ретко мењакао што је рецимо део "
+"\"About us\".  Почетно, ставка <em>page</em> не дозвољава коментаре "
+"посетиоца и  не појављује се на иницијалној почетној страни сајта."
+
+#: profiles/default/default.profile:111
+msgid "Story"
+msgstr "Прича"
+
+#: profiles/default/default.profile:113
+msgid ""
+"A <em>story</em>, similar in form to a <em>page</em>, is ideal for creating "
+"and displaying content that informs or engages website visitors. Press "
+"releases, site announcements, and informal blog-like entries may all be "
+"created with a <em>story</em> entry. By default, a <em>story</em> entry is "
+"automatically featured on the site's initial home page, and provides the "
+"ability to post comments."
+msgstr ""
+"Ставка <em>story</em>, слична по форми са ставком <em>page</em>, је идеална "
+"за прављење или приказивање садржаја који обавештава или ангажује посетиоце "
+"вашег сајта. Штампана изадања, објаве на сајту, и неформалне ставке сличне "
+"блогу могу бити креирани са <em>story</em> ставком. Почетно, ставка "
+"<em>story</em> аутоматски се појављује на иницијалној почетној страни сајта, "
+"и омогућава Вам да шаљете коментаре."

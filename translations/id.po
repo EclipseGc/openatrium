@@ -1,0 +1,1424 @@
+# $Id: installer.po,v 1.5 2009/06/15 10:29:33 thenicespider Exp $
+#
+# LANGUAGE translation of Drupal (installer)
+# Copyright YEAR NAME <EMAIL@ADDRESS>
+# Generated from files:
+#  install.php,v 1.113.2.2 2008/02/08 22:00:45 goba
+#  system.install,v 1.238.2.1 2008/02/08 17:07:55 goba
+#  database.mysql.inc,v 1.89 2008/01/24 10:46:54 goba
+#  database.mysqli.inc,v 1.54 2008/01/23 09:59:29 goba
+#  database.pgsql.inc,v 1.68.2.1 2008/02/07 10:17:26 goba
+#  form.inc,v 1.265.2.4 2008/02/11 14:45:57 goba
+#  install.inc,v 1.56.2.2 2008/02/11 15:10:26 goba
+#  install.mysql.inc,v 1.9 2008/01/23 09:59:29 goba
+#  install.mysqli.inc,v 1.12 2008/01/23 09:59:29 goba
+#  install.pgsql.inc,v 1.6 2007/10/22 15:22:39 dries
+#  locale.inc,v 1.174 2008/01/09 21:36:13 goba
+#  theme.maintenance.inc,v 1.10 2008/01/24 09:42:50 goba
+#  unicode.inc,v 1.29 2007/12/28 12:02:50 dries
+#  menu.install,v 1.9 2008/01/30 20:27:28 goba
+#  default.profile,v 1.22 2007/12/17 12:43:34 goba
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"POT-Creation-Date: 2008-02-15 13:50+0100\n"
+"PO-Revision-Date: 2009-03-25 00:26+0700\n"
+"Last-Translator: Tekad Matulatan <tekad.matulatan@stimednp.ac.id> Anthony "
+"<asp@anthony.web.id> \n"
+"Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n!=1);\n"
+
+#: install.php:111
+msgid "Requirements problem"
+msgstr "Masalah persyaratan"
+
+#: install.php:201
+msgid "Database configuration"
+msgstr "Konfigurasi basisdata"
+
+#: install.php:223
+msgid ""
+"Your web server does not appear to support any common database types. Check "
+"with your hosting provider to see if they offer any databases that <a href="
+"\"@drupal-databases\">Drupal supports</a>."
+msgstr ""
+"Server web Anda tampaknya tidak mendukung satupun jenis basisdata yang umum "
+"digunakan. Periksa fasilitas penyedia layanan hosting apakah mereka "
+"mendukung salah satu basisdata <a href=\"@drupal-databases\"> yang Drupal "
+"dukung</a>."
+
+#: install.php:229
+msgid "Basic options"
+msgstr "Opsi dasar"
+
+#: install.php:230
+msgid "To set up your @drupal database, enter the following information."
+msgstr "Untuk menyiapkan basisdata @drupal anda, masukkan informasi berikut."
+
+#: install.php:236
+msgid "Database type"
+msgstr "Jenis basisdata"
+
+#: install.php:240
+msgid "The type of database your @drupal data will be stored in."
+msgstr ""
+"Jenis basisdata dari data @drupal anda yang akan digunakan untuk menyimpan."
+
+#: install.php:242
+msgid ""
+"The name of the database your @drupal data will be stored in. It must exist "
+"on your server before @drupal can be installed."
+msgstr ""
+"Nama basisdata dari data @drupal anda yang akan digunakan untuk menyimpan. "
+"Nama basisdata tersebut sudah harus ada pada server anda sebelum @drupal "
+"dapat diinstall"
+
+#: install.php:251
+msgid ""
+"The name of the %db_type database your @drupal data will be stored in. It "
+"must exist on your server before @drupal can be installed."
+msgstr ""
+"Nama dari basisdata %db_type data @drupal anda yang akan digunakan untuk "
+"menyimpan. Nama tersebut harus tersedia pada server sebelum @drupal dapat "
+"diinstal."
+
+#: install.php:258
+msgid "Database name"
+msgstr "Nama basisdata"
+
+#: install.php:269
+msgid "Database username"
+msgstr "Nama pengguna (username) basisdata"
+
+#: install.php:279
+msgid "Database password"
+msgstr "Kata sandi (password) basisdata"
+
+#: install.php:287
+msgid "Advanced options"
+msgstr "Opsi tingkat lanjut"
+
+#: install.php:290
+msgid ""
+"These options are only necessary for some sites. If you're not sure what you "
+"should enter here, leave the default settings or check with your hosting "
+"provider."
+msgstr ""
+"Opsi ini hanya diperlukan untuk beberapa situs. Jika tidak yakin akan apa "
+"yang harus dimasukkan, tinggalkan pengaturan default atau periksa penyedia "
+"layanan hosting."
+
+#: install.php:296
+msgid "Database host"
+msgstr "Host basisdata"
+
+#: install.php:301
+msgid "If your database is located on a different server, change this."
+msgstr "Ganti, jika basisdate berada pada server yang berbeda."
+
+#: install.php:307
+msgid "Database port"
+msgstr "Port basisdate"
+
+#: install.php:311
+msgid ""
+"If your database server is listening to a non-standard port, enter its "
+"number."
+msgstr ""
+"Jika server basisdata anda berhubungan dengan port tidak baku, masukkan "
+"angka port-nya."
+
+#: install.php:318
+msgid "Table prefix"
+msgstr "Awalan tabel"
+
+#: install.php:322
+msgid ""
+"If more than one application will be sharing this database, enter a table "
+"prefix such as %prefix for your @drupal site here."
+msgstr ""
+"Jika lebih dari satu aplikasi yang mengunakan basisdata ini bersama-sama, "
+"masukkan disini awalan tabel seperti %prefix untuk situs @drupal anda."
+
+#: install.php:327;474;1079
+msgid "Save and continue"
+msgstr "Simpan dan lanjutkan"
+
+#: install.php:355
+msgid ""
+"The database table prefix you have entered, %db_prefix, is invalid. The "
+"table prefix can only contain alphanumeric characters, periods, or "
+"underscores."
+msgstr ""
+"Awalan tabel basisdata yang dimasukkan, %db_prefix tidak valid. Awalan tabel "
+"harus berisi karakter alfanumerik, titik atau garis bawah."
+
+#: install.php:359
+msgid "Database port must be a number."
+msgstr "Port basisdata harus berisi angka."
+
+#: install.php:369
+msgid ""
+"In your %settings_file file you have configured @drupal to use a %db_type "
+"server, however your PHP installation currently does not support this "
+"database type."
+msgstr ""
+"Dalam berkas %settings_file anda telah mengkonfigurasi @drupal untuk "
+"menggunakan server %db_type , tetapi instalasi PHP anda tidak mendukung tipe "
+"basisdata ini."
+
+#: install.php:382
+msgid ""
+"In order for Drupal to work, and to continue with the installation process, "
+"you must resolve all permission issues reported above. We were able to "
+"verify that we have permission for the following commands: %commands. For "
+"more help with configuring your database server, see the <a href=\"http://"
+"drupal.org/node/258\">Installation and upgrading handbook</a>. If you are "
+"unsure what any of this means you should probably contact your hosting "
+"provider."
+msgstr ""
+"Untuk membuat Drupal bekerja, dan melanjutkan proses instalasi, maka semua "
+"masalah perijinan yang tertulis di atas harus diselesaikan. Verifikasi "
+"perijinan dapat dilakukan untuk perintah berikut: %commands. Untuk bantuan "
+"dalam konfigurasi server basisdata, lihat <a href=\"http://drupal.org/"
+"node/258\">Buku pegangan Installation dan Pembaharuan</a>. Jika tidak yakin "
+"akan apa yang terjadi, maka sebaiknya menghubungi penyediaan layanan "
+"hosting. "
+
+#: install.php:444
+msgid "Select an installation profile"
+msgstr "Pilih profil instalasi"
+
+#: install.php:508;550;929
+msgid "Choose language"
+msgstr "Pilih bahasa"
+
+#: install.php:510
+msgid ""
+"With the addition of an appropriate translation package, this installer is "
+"capable of proceeding in another language of your choice. To install and use "
+"Drupal in a language other than English:"
+msgstr ""
+"Dengan tambahan paket penerjemahan yang sesuai, alat peng-instal ini akan "
+"mampu melanjutkan dengan bahasa yang dipilih. Untuk instalasi dan "
+"menggunakan Drupal dalam bahasa selain bahasa Inggris."
+
+#: install.php:511
+msgid ""
+"Determine if <a href=\"@translations\" target=\"_blank\">a translation of "
+"this Drupal version</a> is available in your language of choice. A "
+"translation is provided via a translation package; each translation package "
+"enables the display of a specific version of Drupal in a specific language. "
+"Not all languages are available for every version of Drupal."
+msgstr ""
+"Tentukan jika <a href=\"@translations\" target=\"_blank\"> sebuah terjemahan "
+"versi Drupal  ini</a> tersedia dalam bahasa yang dipilih. Sebuah terjemahan "
+"tersedia dalam paket terjemahan; setiap paket terjemahan mengaktifkan versi "
+"Drupal dengan bahasa yang khusus. Tidak semua bahasa tersedia untuk setiap "
+"versi Drupal. "
+
+#: install.php:512
+msgid ""
+"If an alternative translation package of your choice is available, download "
+"and extract its contents to your Drupal root directory."
+msgstr ""
+"Jika sebuah paket terjemahan yang dipilih tersedia, unduh dan ekstrak isinya "
+"pada direktori root dari Drupal."
+
+#: install.php:513
+msgid ""
+"Return to choose language using the second link below and select your "
+"desired language from the displayed list. Reloading the page allows the list "
+"to automatically adjust to the presence of new translation packages."
+msgstr ""
+"Kembali kepada pilihan bahasa menggunakan link kedua di bawah dan pilih "
+"bahasa yang diinginkan dari daftar yang ada. Muat ulang(reload) halaman "
+"untuk secara otomatis menyesuaikan daftar dengan keberadaan paket terjemahan "
+"yang baru."
+
+#: install.php:514
+msgid ""
+"Alternatively, to install and use Drupal in English, or to defer the "
+"selection of an alternative language until after installation, select the "
+"first link below."
+msgstr ""
+"Sebagai alternatif, untuk meng-instal dan menggunakan Drupal dalam bahasa "
+"Inggris, atau untuk membedakan pemilihan dari bahasa alternatif hingga "
+"setelah instalasi, pilih link pertama di bawah."
+
+#: install.php:515
+msgid "How should the installation continue?"
+msgstr "Bagaimana instalasi harus dilanjutkan?"
+
+#: install.php:516
+msgid "Continue installation in English"
+msgstr "Lanjutkan instalasi dalam bahasa Inggris"
+
+#: install.php:516
+msgid "Return to choose a language"
+msgstr "Kembali kepada pemilihan bahasa "
+
+#: install.php:519
+msgid "Install Drupal in English"
+msgstr "Instal Drupal dalam bahasa Inggris"
+
+#: install.php:519
+msgid "Learn how to install Drupal in other languages"
+msgstr "Pelajari bagaimana cara instalasi Drupal dalam bahasa yang lain"
+
+#: install.php:566
+msgid "(@language)"
+msgstr "(@language)"
+
+#: install.php:572
+msgid "(built-in)"
+msgstr "(built-in)"
+
+#: install.php:578
+msgid "Select language"
+msgstr "Pilih bahasa"
+
+#: install.php:588
+msgid "No profiles available"
+msgstr "Tidak ada profil yang tersedia"
+
+#: install.php:589
+msgid ""
+"We were unable to find any installer profiles. Installer profiles tell us "
+"what modules to enable and what schema to install in the database. A profile "
+"is necessary to continue with the installation process."
+msgstr ""
+"Tidak dapat menemukan profil peng-instal. Profil peng-instal akan "
+"memberitahukan modul yang harus diaktifkan dan skema apa untuk melakukan "
+"instalasi pada basisdata. Sebuah profil dibutuhkan untuk melanjutkan proses "
+"instalasi."
+
+#: install.php:600
+msgid "Drupal already installed"
+msgstr "Drupal telah terinstall"
+
+#: install.php:601
+msgid ""
+"<ul><li>To start over, you must empty your existing database.</li><li>To "
+"install to a different database, edit the appropriate <em>settings.php</em> "
+"file in the <em>sites</em> folder.</li><li>To upgrade an existing "
+"installation, proceed to the <a href=\"@base-url/update.php\">update script</"
+"a>.</li><li>View your <a href=\"@base-url\">existing site</a>.</li></ul>"
+msgstr ""
+"<ul><li>Untuk memulai lagi dari awal, kosongkan dahulu basisdata yang ada.</"
+"li><li>Untuk menginstal pada basisdata yang berbeda, sunting file "
+"<em>settings.php</em> pada folder <em>situs</em> .</li><li>Untuk membaharui "
+"instalasi yang ada, lanjutkan dengan <a href=\"@base-url/update.php\">update "
+"script</a>.</li><li>Lihat situs anda <a href=\"@base-url\">yang ada "
+"sekarang</a>.</li></ul>"
+
+#: install.php:640
+msgid "Installing @drupal"
+msgstr "Instalasi @drupal"
+
+#: install.php:641
+msgid "The installation has encountered an error."
+msgstr "Instalasi menemukan sebuah kesalahan."
+
+#: install.php:697;934
+msgid "Configure site"
+msgstr "Lakukan konfigurasi situs"
+
+#: install.php:703
+msgid ""
+"All necessary changes to %dir and %file have been made, so you should remove "
+"write permissions to them now in order to avoid security risks. If you are "
+"unsure how to do so, please consult the <a href=\"@handbook_url\">on-line "
+"handbook</a>."
+msgstr ""
+"Semua perubahan yang harus dilakukan kepada %dir dan %file telah dibuat, "
+"sebaiknya matikan hak menulis pada berkas dan direktori tersebut untuk "
+"menghindari resiko keamanan. Jika kamu tidak yakin bagaimana caranya, "
+"silakan lihat  <a href=\"@handbook_url\">buku pegangan on-line </a>."
+
+#: install.php:706
+msgid ""
+"All necessary changes to %dir and %file have been made. They have been set "
+"to read-only for security."
+msgstr ""
+"Semua perubahan yang harus dilakukan kepada %dir dan %file telah dibuat. "
+"Berkas dan direktori tersebut telah diubah ke modus hanya bisa baca untuk "
+"alasan keamanan."
+
+#: install.php:714
+msgid "Your server has been successfully tested to support this feature."
+msgstr "Server telah lolos uji untuk mendukung fitur ini."
+
+#: install.php:714
+msgid ""
+"Your system configuration does not currently support this feature. The <a "
+"href=\"http://drupal.org/node/15365\">handbook page on Clean URLs</a> has "
+"additional troubleshooting information."
+msgstr ""
+"Konfigurasi sistem tidak mendukung fitur ini. Informasi pengatasan masalahan "
+"tambahan ada pada <a href=\"http://drupal.org/node/15365\">buku pegangan "
+"untuk URL ramah</a>."
+
+#: install.php:714
+msgid "Testing clean URLs..."
+msgstr "Menguji URL ramah...."
+
+#: install.php:779
+msgid "@drupal installation complete"
+msgstr "Instalasi @drupal telah selesai"
+
+#: install.php:781
+msgid "Congratulations, @drupal has been successfully installed."
+msgstr "Selamat, @drupal telah selesai diinstal."
+
+#: install.php:782
+msgid ""
+"Please review the messages above before continuing on to <a href=\"@url"
+"\">your new site</a>."
+msgstr ""
+"Silakan tinjau ulang pesan di atas sebelum melanjutkan ke <a href=\"@url"
+"\">situs baru Anda</a>."
+
+#: install.php:782
+msgid "You may now visit <a href=\"@url\">your new site</a>."
+msgstr "Anda kini dapat mengunjungi <a href=\"@url\">situs baru Anda</a>."
+
+#: install.php:887
+msgid ""
+"The @drupal installer requires write permissions to %file during the "
+"installation process. If you are unsure how to grant file permissions, "
+"please consult the <a href=\"@handbook_url\">on-line handbook</a>."
+msgstr ""
+"Penginstall @drupal memerlukan ijin untuk menulis pada %file selama proses "
+"instalasi. Jika anda tidak tahu bagaimana cara memberikan ijin tersebut, "
+"lihat <a href=\"@handbook_url\">buku pegangan online</a>."
+
+#: install.php:902;914
+msgid "Currently using !item !version"
+msgstr "Saat ini mengunakan !item !version"
+
+#: install.php:928
+msgid "Choose profile"
+msgstr "Pilih profil"
+
+#: install.php:930
+msgid "Verify requirements"
+msgstr "Verifikasi kebutuhan"
+
+#: install.php:931
+msgid "Set up database"
+msgstr "Pengaturan basisdata"
+
+#: install.php:932
+msgid "Install profile"
+msgstr "Instal profil"
+
+#: install.php:933
+msgid "Set up translations"
+msgstr "Pengaturan penerjemah"
+
+#: install.php:945
+msgid "Install site"
+msgstr "Instal situs"
+
+#: install.php:965
+msgid "Finish translations"
+msgstr "Penerjemahan selesai"
+
+#: install.php:970
+msgid "Finished"
+msgstr "Selesai"
+
+#: install.php:987
+msgid "To configure your website, please provide the following information."
+msgstr "Untuk mengkonfigurasi situs web anda, silakan isikan informasi berikut"
+
+#: install.php:992
+msgid "Site information"
+msgstr "Informasi situs"
+
+#: install.php:997
+msgid "Site name"
+msgstr "Nama situs"
+
+#: install.php:1003
+msgid "Site e-mail address"
+msgstr "Alamat e-mail situs"
+
+#: install.php:1005
+msgid ""
+"The <em>From</em> address in automated e-mails sent during registration and "
+"new password requests, and other notifications. (Use an address ending in "
+"your site's domain to help prevent this e-mail being flagged as spam.)"
+msgstr ""
+"Bagian <em>From</em> alamat dalam e-mail otomatis dikirim sewaktu "
+"pendaftaran dan permintaan kata sandi yang baru, dan notifikasi yang lain. "
+"(GUnakan alamat dengan akhiran domain situs anda untuk mencegah e-mail yang "
+"dikirim dinyatakan sebagai spam.)"
+
+#: install.php:1011
+msgid "Administrator account"
+msgstr "Akun administrator"
+
+#: install.php:1016
+msgid ""
+"The administrator account has complete access to the site; it will "
+"automatically be granted all permissions and can perform any administrative "
+"activity. This will be the only account that can perform certain activities, "
+"so keep its credentials safe."
+msgstr ""
+"Akun administrator punya akses lengkap terhadap situs; secara otomatis semua "
+"ijin diberikan dan dapat melakukan semua aktivitas admnistrasi. Hanya Akun "
+"ini yang dapat melakukan aktivitas tertentu, jadi harap disimpan dengan aman."
+
+#: install.php:1021
+msgid "Username"
+msgstr "Nama Pengguna"
+
+#: install.php:1023
+msgid ""
+"Spaces are allowed; punctuation is not allowed except for periods, hyphens, "
+"and underscores."
+msgstr ""
+"Spasi diijinkan; tanda baca tidak diijinkan kecuali titik, garis-sambung dan "
+"garis bawah."
+
+#: install.php:1029
+msgid "E-mail address"
+msgstr "Alamat email"
+
+#: install.php:1031
+msgid ""
+"All e-mails from the system will be sent to this address. The e-mail address "
+"is not made public and will only be used if you wish to receive a new "
+"password or wish to receive certain news or notifications by e-mail."
+msgstr ""
+"Semua email dari sistem akan dikirim melalui alamat ini. Alamat email tidak "
+"dibuat untuk publik dan hanya akan digunakan jika ingin menerima kata sandi "
+"baru atau ingin menerima berita tertentu atau notifikasi melalui email."
+
+#: install.php:1044
+msgid "Server settings"
+msgstr "Pengaturan server"
+
+#: install.php:1049
+msgid "Default time zone"
+msgstr "Zona waktu default"
+
+#: install.php:1052
+msgid ""
+"By default, dates in this site will be displayed in the chosen time zone."
+msgstr ""
+"Tanggal pada situs akan ditampilkan sesuai zona waktu yang dipilih, secara "
+"default"
+
+#: install.php:1058
+msgid "Clean URLs"
+msgstr "URL yang ramah"
+
+#: (duplicate) install.php:1060 modules/system/system.install:60
+msgid "Disabled"
+msgstr "Di-non-aktif-kan"
+
+#: (duplicate) install.php:1060 modules/system/system.install:282
+msgid "Enabled"
+msgstr "Di-aktif-kan"
+
+#: install.php:1061
+msgid ""
+"This option makes Drupal emit \"clean\" URLs (i.e. without <code>?q=</code> "
+"in the URL)."
+msgstr ""
+"Opsi ini membuat Drupal akan memerikan URL \"ramah\" (yaitu tanpa <code>?q=</"
+"code> di URL)"
+
+#: (duplicate) install.php:1070 modules/system/system.install:293
+msgid "Update notifications"
+msgstr "Notifikasi pembaharuan"
+
+#: install.php:1071
+msgid "Check for updates automatically"
+msgstr "Periksa adanya pembaharuan secara otomatis"
+
+#: install.php:1073
+msgid ""
+"With this option enabled, Drupal will notify you when new releases are "
+"available. This will significantly enhance your site's security and is "
+"<strong>highly recommended</strong>. This requires your site to periodically "
+"send anonymous information on its installed components to <a href=\"@drupal"
+"\">drupal.org</a>. For more information please see the <a href=\"@update"
+"\">update notification information</a>."
+msgstr ""
+"Dengan mengakifkan opsi ini, Drupal akan memberitahukan bila ada terbitan "
+"baru. Hal ini <strong>sangat direkomendasi</strong> untuk meningkatkan "
+"keamanan situs secara signifikan. Hal ini memerlukan situs Anda secara "
+"periodik mengirimkan informasi secara anonim atas komponen yang terinstal ke "
+"<a href=\"@drupal\">drupal.org</a>. Untuk informasi lebih lanjut lihat <a "
+"href=\"@update\">notifikasi informasi pembaharuan</a>."
+
+#: (duplicate) includes/database.mysql.inc:26 includes/database.mysqli.inc:29
+msgid "MySQL database"
+msgstr "MySQL database"
+
+#: (duplicate) includes/database.mysql.inc:32 includes/database.mysqli.inc:35
+msgid "Your MySQL Server is too old. Drupal requires at least MySQL %version."
+msgstr "Server MySQL sudah usang. Drupal memerlukan setidaknya MySQL %version."
+
+#: (duplicate) includes/database.pgsql.inc:23
+msgid "PostgreSQL database"
+msgstr "PostgreSQL database"
+
+#: (duplicate) includes/database.pgsql.inc:29
+msgid ""
+"Your PostgreSQL Server is too old. Drupal requires at least PostgreSQL %"
+"version."
+msgstr ""
+"Server PostgreSQL database sudah usang. Drupal memerlukan setidaknya "
+"PostgreSQL %version."
+
+#: (duplicate) includes/database.pgsql.inc:405
+msgid ""
+"Your PostgreSQL database is set up with the wrong character encoding (%"
+"encoding). It is possible it will not work as expected. It is advised to "
+"recreate it with UTF-8/Unicode encoding. More information can be found in "
+"the <a href=\"@url\">PostgreSQL documentation</a>."
+msgstr ""
+"PostgreSQL database memiliki encoding karakter yang salah (%encoding). "
+"Kemungkinan menyebabkannya tidak bekerja sebagaimana mestinya. Disarankan "
+"untuk membuatnya kembali dengan  encoding UTF-8/Unicode. Informasi lebih "
+"lanjut dapat dilihat pada <a href=\"@url\">dokumentasi PostgreSQL</a>."
+
+#: (duplicate) includes/form.inc:672
+msgid "!name field is required."
+msgstr "Isian !name dibutuhkan."
+
+#: (duplicate) includes/form.inc:677
+msgid ""
+"!name cannot be longer than %max characters but is currently %length "
+"characters long."
+msgstr ""
+"Karakter !name tidak dapat lebih panjang dari %max tetapi panjang karakter "
+"kini adalah %length ."
+
+#: (duplicate) includes/form.inc:691 ;697
+msgid ""
+"An illegal choice has been detected. Please contact the site administrator."
+msgstr ""
+"Pilihan yang tidak legal telah terdeteksi. Harap hubungi administrator situs."
+
+#: (duplicate) includes/form.inc:2161
+msgid "This field is required."
+msgstr "Isian ini dibutuhkan."
+
+#: (duplicate) includes/form.inc:2166 ;2169
+msgid "!title: !required"
+msgstr "!title: !required"
+
+#: (duplicate) includes/form.inc:2406
+msgid "Processing"
+msgstr "Sedang memproses"
+
+#: (duplicate) includes/form.inc:2407
+msgid "Initializing."
+msgstr "Inisialisasi"
+
+#: (duplicate) includes/form.inc:2408
+msgid "Remaining @remaining of @total."
+msgstr "Sisa @remaining dari @total"
+
+#: (duplicate) includes/form.inc:2409
+msgid "An error has occurred."
+msgstr "Sebuah kesalahan telah terjadi."
+
+#: (duplicate) includes/form.inc:2482
+msgid "Please continue to <a href=\"@error_url\">the error page</a>"
+msgstr "Silakan lanjutkan ke <a href=\"@error_url\">halaman kesalahan</a>"
+
+#: includes/install.inc:237
+msgid "Failed to modify %settings, please verify the file permissions."
+msgstr "Gagal melakukan modifikasi %settings , harap lihat perijinan file."
+
+#: includes/install.inc:241
+msgid "Failed to open %settings, please verify the file permissions."
+msgstr "Gagal dalam membuka %settings , silakan verifikasi perijinan file."
+
+#: includes/install.inc:295
+msgid ""
+"The %module module is required but was not found. Please move it into the "
+"<em>modules</em> subdirectory."
+msgstr ""
+"Modul %module yang dibutuhkan tidak ditemukan. Silakan pindahkan ke "
+"subdirektori <em>modules</em>."
+
+#: includes/install.mysql.inc:24
+msgid "PHP MySQL support not enabled."
+msgstr "Dukungan PHP MySQL tidak diaktifkan."
+
+#: includes/install.mysql.inc:44 includes/install.mysqli.inc:39
+msgid ""
+"Failed to connect to your MySQL database server. MySQL reports the following "
+"message: %error.<ul><li>Are you sure you have the correct username and "
+"password?</li><li>Are you sure that you have typed the correct database "
+"hostname?</li><li>Are you sure that the database server is running?</li></"
+"ul>For more help, see the <a href=\"http://drupal.org/node/258"
+"\">Installation and upgrading handbook</a>. If you are unsure what these "
+"terms mean you should probably contact your hosting provider."
+msgstr ""
+"Gagal untuk berhubungan dengan server basisdata MySQL. Laporan dari MySQL: %"
+"error. <ul><li>Apakah sudah yakin benar dalam memasukkan nama pengguna dan "
+"kata sandi?</li><li>Apakah nama host basisdata yang dimasukkan sudah benar?</"
+"li><li>Apakah server basisdata sudah berjalan?</li><li>Untuk bantuan "
+"lanjutan, lihat <a href=\"http://drupal.org/node/258\">Buku pegangan "
+"Instalasi dan Upgrading</a>. Jika belum yakin dengan istilah tersebut, "
+"hendaknya menghubungi penyedia hosting."
+
+#: includes/install.mysql.inc:50 includes/install.mysqli.inc:45
+msgid ""
+"Failed to select your database on your MySQL database server, which means "
+"the connection username and password are valid, but there is a problem "
+"accessing your data. MySQL reports the following message: %error.<ul><li>Are "
+"you sure you have the correct database name?</li><li>Are you sure the "
+"database exists?</li><li>Are you sure the username has permission to access "
+"the database?</li></ul>For more help, see the <a href=\"http://drupal.org/"
+"node/258\">Installation and upgrading handbook</a>. If you are unsure what "
+"these terms mean you should probably contact your hosting provider."
+msgstr ""
+"Gagal untuk memilih basisdata pada server MySQL anda, yang berarti koneksi "
+"nama pengguna dan kata sandi sudah betul, tetapi masih ada masalah dalam "
+"akses ke data Anda. Laporan MySQL: %error. <ul><li>Apakah sudah yakin bahwa "
+"nama basisdata sudah benar?</li><li>Apakah sudah yakin basisdata sudah ada?</"
+"li><li>Apakah sudah yakin nama pengguna memiliki ijin untuk mengakses "
+"basisdata?</li><li>Untuk bantuan lanjutan, lihat lihat <a href=\"http://"
+"drupal.org/node/258\">Buku pegangan Instalasi dan Upgrading</a>. Jika belum "
+"yakin dengan istilah tersebut, hendaknya menghubungi penyedia hosting."
+
+#: includes/install.mysql.inc:60 includes/install.mysqli.inc:55
+msgid ""
+"Failed to create a test table on your MySQL database server with the command "
+"%query. MySQL reports the following message: %error.<ul><li>Are you sure the "
+"configured username has the necessary MySQL permissions to create tables in "
+"the database?</li></ul>For more help, see the <a href=\"http://drupal.org/"
+"node/258\">Installation and upgrading handbook</a>. If you are unsure what "
+"these terms mean you should probably contact your hosting provider."
+msgstr ""
+"Gagal dalam membuat tabel uji pada server basisdata MySQL dengan perintah %"
+"query. Laporan MySQL: %error. <ul><li>Apakah sudah yakin akan konfigurasi "
+"nama pengguna memiliki ijin MySQL yang diperlukan untuk membuat tabel pada "
+"basisdata?</li><li>Untuk bantuan lanjutan, lihat <a href=\"http://drupal.org/"
+"node/258\">Buku pegangan Instalasi dan Upgrading</a>. Jika belum yakin "
+"dengan istilah tersebut, hendaknya menghubungi penyedia hosting."
+
+#: includes/install.mysql.inc:71 includes/install.mysqli.inc:66
+msgid ""
+"Failed to insert a value into a test table on your MySQL database server. We "
+"tried inserting a value with the command %query and MySQL reported the "
+"following error: %error."
+msgstr ""
+"Gagal untuk mensisipkan nilai pada tabel percobaan pada server basisdata "
+"MySQL. Telah dicoba untuk menyisipkan nilai dengan perintah %query dan MySQL "
+"melaporkan: %error."
+
+#: includes/install.mysql.inc:82 includes/install.mysqli.inc:77
+msgid ""
+"Failed to update a value in a test table on your MySQL database server. We "
+"tried updating a value with the command %query and MySQL reported the "
+"following error: %error."
+msgstr ""
+"Gagal untuk memperbaharui nilai pada tabel percobaan pada server basisdata "
+"MySQL. Telah dicoba untuk memperbaharui suatu nilai dengan perintah %query "
+"dan MySQL melaporkan: %error."
+
+#: includes/install.mysql.inc:93 includes/install.mysqli.inc:88
+msgid ""
+"Failed to delete a value from a test table on your MySQL database server. We "
+"tried deleting a value with the command %query and MySQL reported the "
+"following error: %error."
+msgstr ""
+"Gagal untuk menghapus nilai pada tabel percobaan pada server basisdata "
+"MySQL. Telah dicoba untuk menghapus suatu nilai dengan perintah %query dan "
+"MySQL melaporkan: %error."
+
+#: includes/install.mysql.inc:104 includes/install.mysqli.inc:99
+msgid ""
+"Failed to drop a test table from your MySQL database server. We tried "
+"dropping a table with the command %query and MySQL reported the following "
+"error %error."
+msgstr ""
+"Gagal untuk menghapus tabel percobaan pada server basisdata MySQL. Telah "
+"dicoba untuk menghapus tabel dengan perintah %query dan MySQL melaporkan: %"
+"error."
+
+#: includes/install.mysqli.inc:24
+msgid "PHP MySQLi support not enabled."
+msgstr "Dukungan PHP MySQLi tidak aktif."
+
+#: includes/install.pgsql.inc:24
+msgid "PHP PostgreSQL support not enabled."
+msgstr "Dukungan PHP PostgreSQL tidak aktif."
+
+#: includes/install.pgsql.inc:51
+msgid ""
+"Failed to connect to your PostgreSQL database server. PostgreSQL reports the "
+"following message: %error.<ul><li>Are you sure you have the correct username "
+"and password?</li><li>Are you sure that you have typed the correct database "
+"hostname?</li><li>Are you sure that the database server is running?</"
+"li><li>Are you sure you typed the correct database name?</li></ul>For more "
+"help, see the <a href=\"http://drupal.org/node/258\">Installation and "
+"upgrading handbook</a>. If you are unsure what these terms mean you should "
+"probably contact your hosting provider."
+msgstr ""
+"Gagal berhubungan dengan server basisdata PostgreSQL. Laporan dari "
+"PostgreSQL: %error. <ul><li>Apakah sudah yakin dalam memasukkan namapengguna "
+"dan kata sandi?</li><li>Apakah nama host basisdata yang dimasukkan sudah "
+"benar?</li><li>Apakah server basisdata sudah berjalan?</li><li>Untuk bantuan "
+"lanjutan, lihat <a href=\"http://drupal.org/node/258\">Buku pegangan "
+"Instalasi dan Upgrading</a>. Jika belum yakin dengan istilah tersebut, "
+"hendaknya menghubungi penyedia hosting."
+
+#: includes/install.pgsql.inc:61
+msgid ""
+"Failed to create a test table on your PostgreSQL database server with the "
+"command %query. PostgreSQL reports the following message: %error.<ul><li>Are "
+"you sure the configured username has the necessary PostgreSQL permissions to "
+"create tables in the database?</li></ul>For more help, see the <a href="
+"\"http://drupal.org/node/258\">Installation and upgrading handbook</a>. If "
+"you are unsure what these terms mean you should probably contact your "
+"hosting provider."
+msgstr ""
+"Gagal dalam membuat tabel percobaan pada server basisdata PostgreSQL dengan "
+"perintah %query. Laporan PostgreSQL: %error. <ul><li>Apakah sudah yakin akan "
+"konfigurasi namapengguna memiliki ijin PostgreSQL yang diperlukan untuk "
+"membuat tabel pada basisdata?</li><li>Untuk bantuan lanjutan, lihat lihat <a "
+"href=\"http://drupal.org/node/258\">Buku pegangan Instalasi dan Upgrading</"
+"a>. Jika belum yakin dengan istilah tersebut, hendaknya menghubungi penyedia "
+"hosting."
+
+#: includes/install.pgsql.inc:72
+msgid ""
+"Failed to insert a value into a test table on your PostgreSQL database "
+"server. We tried inserting a value with the command %query and PostgreSQL "
+"reported the following error: %error."
+msgstr ""
+"Gagal untuk menyisipkan nilai pada tabel percobaan pada server basisdata "
+"PostgreSQL. Telah dicoba untuk menyisipkan nilai dengan perintah %query dan "
+"PostgreSQL melaporkan: %error."
+
+#: includes/install.pgsql.inc:83
+msgid ""
+"Failed to update a value in a test table on your PostgreSQL database server. "
+"We tried updating a value with the command %query and PostgreSQL reported "
+"the following error: %error."
+msgstr ""
+"Gagal untuk memperbaharui nilai pada tabel percobaan pada server basisdata "
+"PostgreSQL. Telah dicoba untuk memperbaharui nilai dengan perintah %query "
+"dan PostgreSQL melaporkan: %error."
+
+#: includes/install.pgsql.inc:94
+msgid ""
+"Failed to lock a test table on your PostgreSQL database server. We tried "
+"locking a table with the command %query and PostgreSQL reported the "
+"following error: %error."
+msgstr ""
+"Gagal untuk mengunci tabel percobaan pada server basisdata PostgreSQL. Telah "
+"dicoba untuk mengunci suatu tabel dengan perintah %query dan PostgreSQL "
+"melaporkan: %error."
+
+#: includes/install.pgsql.inc:105
+msgid ""
+"Failed to unlock a test table on your PostgreSQL database server. We tried "
+"unlocking a table with the command %query and PostgreSQL reported the "
+"following error: %error."
+msgstr ""
+"Gagal untuk melepaskan tabel percobaan pada server basisdata MySQL. Telah "
+"dicoba untuk melepas suatu tabel dengan perintah %query dan PostgreSQL "
+"melaporkan: %error."
+
+#: includes/install.pgsql.inc:116
+msgid ""
+"Failed to delete a value from a test table on your PostgreSQL database "
+"server. We tried deleting a value with the command %query and PostgreSQL "
+"reported the following error: %error."
+msgstr ""
+"Gagal untuk menghapus suatu nilai pada tabel percobaan pada server database "
+"PostgreSQL. Telah dicoba untuk menghapus suatu nilai dengan perintah %query "
+"dan MySQL melaporkan: %error."
+
+#: includes/install.pgsql.inc:127
+msgid ""
+"Failed to drop a test table from your PostgreSQL database server. We tried "
+"dropping a table with the command %query and PostgreSQL reported the "
+"following error %error."
+msgstr ""
+"Gagal untuk menghapus tabel percobaan pada server basisdata MySQL. Telah "
+"dicoba untuk menghapus tabel dengan perintah %query dan PostgreSQL "
+"melaporkan: %error."
+
+#: (duplicate) includes/locale.inc:1021
+msgid ""
+"The translation import failed, because the file %filename could not be read."
+msgstr "Import terjemahan gagal, karena file %filename tidak dapat dibaca."
+
+#: (duplicate) includes/locale.inc:1050
+msgid ""
+"The translation file %filename contains an error: \"msgstr\" was expected "
+"but not found on line %line."
+msgstr ""
+"File terjemahan %filename mengandung suatu kesalahan: \"msgstr\" dibutuhkan "
+"namun tidak ditemukan pada baris %line."
+
+#: (duplicate) includes/locale.inc:1056
+msgid ""
+"The translation file %filename contains an error: \"msgid_plural\" was "
+"expected but not found on line %line."
+msgstr ""
+"File terjemahan %filename mengandung suatu kesalahan: \"msgid_plural\" "
+"dibutuhkan namun tidak ditemukan pada baris %line."
+
+#: (duplicate) includes/locale.inc:1062 ;1080 ;1092 ;1100 ;1114 ;1123
+msgid "The translation file %filename contains a syntax error on line %line."
+msgstr ""
+"File terjemahan %filename mengandung suatu kesalahan syntax pada baris %line."
+
+#: (duplicate) includes/locale.inc:1074
+msgid ""
+"The translation file %filename contains an error: \"msgid\" is unexpected on "
+"line %line."
+msgstr ""
+"File terjemahan %filename mengandung suatu kesalahan: \"msgid\" dibutuhkan "
+"namun tidak ditemukan pada baris %line."
+
+#: (duplicate) includes/locale.inc:1088
+msgid ""
+"The translation file %filename contains an error: \"msgstr[]\" is unexpected "
+"on line %line."
+msgstr ""
+"File terjemahan %filename mengandung suatu kesalahan: \"msgstr[]\" "
+"dibutuhkan namun tidak ditemukan pada baris %line."
+
+#: (duplicate) includes/locale.inc:1108
+msgid ""
+"The translation file %filename contains an error: \"msgstr\" is unexpected "
+"on line %line."
+msgstr ""
+"File terjemahan %filename mengandung suatu kesalahan: \"msgstr\" dibutuhkan "
+"namun tidak ditemukan pada baris %line."
+
+#: (duplicate) includes/locale.inc:1136
+msgid ""
+"The translation file %filename contains an error: there is an unexpected "
+"string on line %line."
+msgstr ""
+"File terjemahan %filename mengandung suatu kesalahan: tidak ditemukan string "
+"pada baris %line."
+
+#: (duplicate) includes/locale.inc:1147
+msgid "The translation file %filename ended unexpectedly at line %line."
+msgstr "File terjemahan %filename berhenti pada baris %line."
+
+#: (duplicate) includes/locale.inc:2514
+msgid "Importing interface translations"
+msgstr "Mengimpor interface terjemahan"
+
+#: (duplicate) includes/locale.inc:2515
+msgid "Starting import"
+msgstr "Mulai melakukan impor"
+
+#: (duplicate) includes/locale.inc:2516
+msgid "Error importing interface translations"
+msgstr "Kesalahan dalam impor interface terjemahan"
+
+#: includes/theme.maintenance.inc:122
+msgid ""
+"The following errors must be resolved before you can continue the "
+"installation process"
+msgstr ""
+"Kesalahan-kesalahan berikut harus dibetulkan sebelum melanjutkan proses "
+"instalasi"
+
+#: includes/theme.maintenance.inc:122
+msgid ""
+"The following error must be resolved before you can continue the "
+"installation process"
+msgstr ""
+"Kesalahan berikut harus dibetulkan sebelum melanjutkan proses instalasi"
+
+#: includes/theme.maintenance.inc:125
+msgid "Please check the error messages and <a href=\"!url\">try again</a>."
+msgstr "Harap periksa pesan kesalahan dan <a href=\"!url\">ulangi lagi</a>."
+
+#: includes/theme.maintenance.inc:130
+msgid "The following installation warnings should be carefully reviewed"
+msgstr "Peringatan-peringatan instalasi berikut harus ditinjau"
+
+#: includes/theme.maintenance.inc:130
+msgid "The following installation warning should be carefully reviewed"
+msgstr "Peringatan instalasi berikut harus ditinjau"
+
+#: includes/theme.maintenance.inc:137
+msgid ""
+"The following installation warnings should be carefully reviewed, but in "
+"most cases may be safely ignored"
+msgstr ""
+"Peringatan-peringatan instalasi berikut harus ditinjau, walau pada "
+"kebanyakan kejadian dapat diabaikan"
+
+#: includes/theme.maintenance.inc:137
+msgid ""
+"The following installation warning should be carefully reviewed, but in most "
+"cases may be safely ignored"
+msgstr ""
+"Peringatan instalasi berikut harus ditinjau, walau pada kebanyakan kejadian "
+"dapat diabaikan"
+
+#: (duplicate) includes/unicode.inc:48
+msgid ""
+"The PCRE library in your PHP installation is outdated. This will cause "
+"problems when handling Unicode text. If you are running PHP 4.3.3 or higher, "
+"make sure you are using the PCRE library supplied by PHP. Please refer to "
+"the <a href=\"@url\">PHP PCRE documentation</a> for more information."
+msgstr ""
+"Pustaka PCRE pada instalasi PHP telah kadaluarsa. Hal ini akan menyebabkan "
+"masalah dalam menangani teks Unicode. Jika menjalankan PHP 4.3.3 atau lebih "
+"tinggi, yakinkan menggunakan pustaka PCRE dari PHP. Untuk informasi lebih "
+"lanjut lihat <a href=\"@url\">Dokumentasi PCRE PHP</a> "
+
+#: (duplicate) includes/unicode.inc:53
+msgid ""
+"Operations on Unicode strings are emulated on a best-effort basis. Install "
+"the <a href=\"@url\">PHP mbstring extension</a> for improved Unicode support."
+msgstr ""
+"Operasi pada string Unicode telah diemulasi dengan cara yang terbaik. Untuk "
+"meningkatkan dukungan Unicode, Instal <a href=\"@url\">Ekstensi mbstring "
+"PHP</a>."
+
+#: (duplicate) includes/unicode.inc:58
+msgid ""
+"Multibyte string function overloading in PHP is active and must be disabled. "
+"Check the php.ini <em>mbstring.func_overload</em> setting. Please refer to "
+"the <a href=\"@url\">PHP mbstring documentation</a> for more information."
+msgstr ""
+"Kelebihan beban pada fungsi string multibyte di PHP masih aktif dan harus di-"
+"non-aktif-kan. Periksa setting php.ini <em>mbstring.func_overload</em>. "
+"Untuk informasi lebih lanjut, lihat <a href=\"@url\">Dokumentasi mbstring "
+"PHP</a>."
+
+#: (duplicate) includes/unicode.inc:61
+msgid ""
+"Multibyte string input conversion in PHP is active and must be disabled. "
+"Check the php.ini <em>mbstring.encoding_translation</em> setting. Please "
+"refer to the <a href=\"@url\">PHP mbstring documentation</a> for more "
+"information."
+msgstr ""
+"Konversi input pada fungsi string multibyte di PHP masih aktif dan harus di-"
+"non-aktif-kan. Periksa setting php.ini <em>mbstring.encoding_translation</"
+"em>. Untuk informasi lebih lanjut, lihat <a href=\"@url\">Dokumentasi "
+"mbstring PHP</a>."
+
+#: (duplicate) includes/unicode.inc:64
+msgid ""
+"Multibyte string input conversion in PHP is active and must be disabled. "
+"Check the php.ini <em>mbstring.http_input</em> setting. Please refer to the "
+"<a href=\"@url\">PHP mbstring documentation</a> for more information."
+msgstr ""
+"Konversi input pada fungsi string multibyte di PHP masih aktif dan harus di-"
+"non-aktif-kan. Periksa setting php.ini <em>mbstring.http_input</em>. Untuk "
+"informasi lebih lanjut, lihat <a href=\"@url\">Dokumentasi mbstring PHP</a>."
+
+#: (duplicate) includes/unicode.inc:67
+msgid ""
+"Multibyte string output conversion in PHP is active and must be disabled. "
+"Check the php.ini <em>mbstring.http_output</em> setting. Please refer to the "
+"<a href=\"@url\">PHP mbstring documentation</a> for more information."
+msgstr ""
+"Konversi output pada fungsi string multibyte di PHP masih aktif dan harus di-"
+"non-aktif-kan. Periksa setting php.ini <em>mbstring.http_output</em>. Untuk "
+"informasi lebih lanjut, lihat <a href=\"@url\">Dokumentasi mbstring PHP</a>."
+
+#: (duplicate) includes/unicode.inc:84
+msgid "Standard PHP"
+msgstr "PHP standar"
+
+#: (duplicate) includes/unicode.inc:85
+msgid "PHP Mbstring Extension"
+msgstr "Ekstensi Mbstring PHP"
+
+#: (duplicate) includes/unicode.inc:86
+msgid "Error"
+msgstr "Kesalahan"
+
+#: (duplicate) includes/unicode.inc:96
+msgid "Unicode library"
+msgstr "Pustaka Unicode"
+
+#: (duplicate) modules/menu/menu.install:12
+msgid "Navigation"
+msgstr "Navigasi"
+
+#: (duplicate) modules/menu/menu.install:12
+msgid ""
+"The navigation menu is provided by Drupal and is the main interactive menu "
+"for any site. It is usually the only menu that contains personalized links "
+"for authenticated users, and is often not even visible to anonymous users."
+msgstr ""
+"Menu navigasi disediakan oleh Drupal dan merupakan menu interaktif utama "
+"pada kebanyakan situs. Biasanya merupakan menu yang mengandung link personal "
+"untuk pengguna yang terdaftar, dan kadang tidak terlihat pada pengunjung "
+"situs."
+
+#: (duplicate) modules/menu/menu.install:13
+msgid "Primary links"
+msgstr "Link primer"
+
+#: (duplicate) modules/menu/menu.install:13
+msgid ""
+"Primary links are often used at the theme layer to show the major sections "
+"of a site. A typical representation for primary links would be tabs along "
+"the top."
+msgstr ""
+"Link primer kadang digunakan pada layer tema tampilan untuk menunjukkan "
+"seksi utama pada situs. Suatu representasi khas untuk link primer adalah "
+"tabulasi di sepanjang bagian atas."
+
+#: (duplicate) modules/menu/menu.install:14
+msgid "Secondary links"
+msgstr "Link sekunder"
+
+#: (duplicate) modules/menu/menu.install:14
+msgid ""
+"Secondary links are often used for pages like legal notices, contact "
+"details, and other secondary navigation items that play a lesser role than "
+"primary links"
+msgstr ""
+"Link sekunder biasanya digunakan untuk halaman-halaman seperti catatan "
+"legal, detail kontak, dan vagiasi sekunder lain yang juga memiliki peran di "
+"bawah link primer."
+
+#: (duplicate) modules/system/system.install:20
+msgid "Drupal"
+msgstr "Drupal"
+
+#: (duplicate) modules/system/system.install:30
+msgid "Web server"
+msgstr "Server Web"
+
+#: (duplicate) modules/system/system.install:36
+msgid "PHP"
+msgstr "PHP"
+
+#: (duplicate) modules/system/system.install:40
+msgid ""
+"Your PHP installation is too old. Drupal requires at least PHP %version."
+msgstr ""
+"Instalasi PHP yang ada sudah kedaluarsa. Drupal memerlukan setidaknya PHP %"
+"version."
+
+#: (duplicate) modules/system/system.install:46
+msgid "PHP register globals"
+msgstr "Pendaftaran PHP global"
+
+#: (duplicate) modules/system/system.install:55
+msgid ""
+"<em>register_globals</em> is enabled. Drupal requires this configuration "
+"directive to be disabled. Your site may not be secure when "
+"<em>register_globals</em> is enabled. The PHP manual has instructions for <a "
+"href=\"http://php.net/configuration.changes\">how to change configuration "
+"settings</a>."
+msgstr ""
+"<em>register_globals</em> telah diaktifkan. Drupal memerlukan aturan "
+"konfigurasi untuk di-non-aktif-kan. Situs Anda mungkin tidak aman ketika "
+"<em>register_globals</em> diaktifkan. Manual PHP memiliki instruksi untuk <a "
+"href=\"http://php.net/configuration.changes\">bagaimana cara mengubah "
+"pengaturan konfigurasi</a>."
+
+#: (duplicate) modules/system/system.install:57
+msgid "Enabled ('@value')"
+msgstr "Diaktifkan ('@value')"
+
+#: (duplicate) modules/system/system.install:66
+msgid "PHP memory limit"
+msgstr "Batas memori PHP"
+
+#: (duplicate) modules/system/system.install:73
+msgid ""
+"Consider increasing your PHP memory limit to %memory_minimum_limit to help "
+"prevent errors in the installation process."
+msgstr ""
+"Pertimbangkan untuk meningkatkan batas memori PHP ke %memory_minimum_limit "
+"untuk membantu mencegah kesalahan dalam proses instalasi."
+
+#: (duplicate) modules/system/system.install:76
+msgid ""
+"Consider increasing your PHP memory limit to %memory_minimum_limit to help "
+"prevent errors in the update process."
+msgstr ""
+"Pertimbangkan untuk meningkatkan batas memori PHP ke %memory_minimum_limit "
+"untuk membantu mencegah kesalahan dalam proses pembaharuan."
+
+#: (duplicate) modules/system/system.install:79
+msgid ""
+"Depending on your configuration, Drupal can run with a %memory_limit PHP "
+"memory limit. However, a %memory_minimum_limit PHP memory limit or above is "
+"recommended, especially if your site uses additional custom or contributed "
+"modules."
+msgstr ""
+"Bergantung kepada konfigurasi Anda, Drupal dapat berjalan pada batas memori "
+"PHP %memory_limit. Namun dianjurkan, batas memori PHP %memory_limit atau di "
+"atasnya, khususnya jika situs Anda menggunakan modul tambahan atau modul "
+"kontribusi."
+
+#: (duplicate) modules/system/system.install:84
+msgid ""
+"Increase the memory limit by editing the memory_limit parameter in the file %"
+"configuration-file and then restart your web server (or contact your system "
+"administrator or hosting provider for assistance)."
+msgstr ""
+"Tambah batas memori dengan meng-edit parameter batas_memori pada file %"
+"configuration-file dan restart server web Anda (atau hubungi administrator "
+"sistem atau penyedia hosting untuk membantu)."
+
+#: (duplicate) modules/system/system.install:87
+msgid ""
+"Contact your system administrator or hosting provider for assistance with "
+"increasing your PHP memory limit."
+msgstr ""
+"Hubungi administrator sistem atau penyedia hosting untuk membantu "
+"meningkatkan batas memori PHP"
+
+#: (duplicate) modules/system/system.install:90
+msgid "See the <a href=\"@url\">Drupal requirements</a> for more information."
+msgstr ""
+"Untuk informasi lebih lanjut lihat <a href=\"@url\">Persyaratan Drupal</a>."
+
+#: (duplicate) modules/system/system.install:107 ;254
+msgid "Not protected"
+msgstr "Tidak terlindungi"
+
+#: (duplicate) modules/system/system.install:112
+msgid ""
+"The directory %file is not protected from modifications and poses a security "
+"risk. You must change the directory's permissions to be non-writable. "
+msgstr ""
+"Direktori %file tidak terlindungi terhadap modifikasi dan memiliki resiko "
+"keamanan. Ubah perijinan untuk direktori menjadi tidak dapat ditulisi."
+
+#: (duplicate) modules/system/system.install:115
+msgid ""
+"The file %file is not protected from modifications and poses a security "
+"risk. You must change the file's permissions to be non-writable."
+msgstr ""
+"File %file tidak terlindungi terhadap modifikasi dan memiliki resiko "
+"keamanan. Ubah perijinan untuk file menjadi tidak dapat ditulisi."
+
+#: (duplicate) modules/system/system.install:120 ;261
+msgid "Protected"
+msgstr "Terlindungi"
+
+#: (duplicate) modules/system/system.install:123
+msgid "Configuration file"
+msgstr "File konfigurasi"
+
+#: (duplicate) modules/system/system.install:133
+msgid ""
+"For more information, see the online handbook entry for <a href=\"@cron-"
+"handbook\">configuring cron jobs</a>."
+msgstr ""
+"Untuk informasi lebih lanjut, lihat buku pegangan online pada masukkan untuk "
+"<a href=\"@cron-handbook\">Melakukan konfigurasi untuk tugas cron</a>."
+
+#: (duplicate) modules/system/system.install:157
+msgid ""
+"Cron has not run. Please visit the <a href=\"@status\">status report</a> for "
+"more information."
+msgstr ""
+"Cron telah berjalan. Untuk informasi lebih lanjut, harap lihat <a href="
+"\"@status\">laporan status</a>."
+
+#: (duplicate) modules/system/system.install:162
+msgid "Never run"
+msgstr "Tidak pernah berjalan"
+
+#: (duplicate) modules/system/system.install:163
+msgid "Cron has not run."
+msgstr "Cron tidak berjalan."
+
+#: (duplicate) modules/system/system.install:166
+msgid "Last run !time ago"
+msgstr "Kerja terakhir !time yang lalu"
+
+#: (duplicate) modules/system/system.install:169
+msgid "Cron has not run recently."
+msgstr "Akhir-akhir ini Cron tidak berjalan."
+
+#: (duplicate) modules/system/system.install:174
+msgid "Cron maintenance tasks"
+msgstr "Tugas pemeliharaan Cron"
+
+#: (duplicate) modules/system/system.install:177
+msgid "You can <a href=\"@cron\">run cron manually</a>."
+msgstr "Anda dapat <a href=\"@cron\">menjalankan cron secara manual</a>."
+
+#: (duplicate) modules/system/system.install:184
+msgid "File system"
+msgstr "Sistem file"
+
+#: (duplicate) modules/system/system.install:196
+msgid "Not writable"
+msgstr "Tidak dapat ditulisi"
+
+#: (duplicate) modules/system/system.install:198
+msgid "The directory %directory does not exist."
+msgstr "Direktori %directory tidak ada."
+
+#: (duplicate) modules/system/system.install:201
+msgid "The directory %directory is not writable."
+msgstr "Direktori %directory tidak dapat ditulisi."
+
+#: (duplicate) modules/system/system.install:205
+msgid ""
+"You may need to set the correct directory at the <a href=\"@admin-file-system"
+"\">file system settings page</a> or change the current directory's "
+"permissions so that it is writable."
+msgstr ""
+"Anda dapat mengatur direktori yang benar pada <a href=\"@admin-file-system"
+"\">halaman pengaturan sistem file</a> atau mengganti perijinan direktori "
+"yang ada menjadi dapat ditulisi."
+
+#: (duplicate) modules/system/system.install:210
+msgid ""
+"An automated attempt to create this directory failed, possibly due to a "
+"permissions problem. To proceed with the installation, either create the "
+"directory and modify its permissions manually, or ensure that the installer "
+"has the permissions to create it automatically. For more information, please "
+"see INSTALL.txt or the <a href=\"@handbook_url\">on-line handbook</a>."
+msgstr ""
+"Usaha otomatis untuk membuat direktori gagal, kemungkinan karena masalah "
+"perijinan. Untuk melanjutkan instalasi, dapat dilakukan baik dengan membuat "
+"direktori dan memodifikasi perijinannya secara manual, atau buat installer "
+"memiliki hak akses untuk menghasilkannya secara otomatis. Untuk informasi "
+"lebih lanjut, lihat Install.txt atau  <a href=\"@handbook_url\">buku "
+"pegangan on-line</a>."
+
+#: (duplicate) modules/system/system.install:220
+msgid "Writable (<em>public</em> download method)"
+msgstr "Dapat ditulisi (metoda pengunduhan <em>public</em>)"
+
+#: (duplicate) modules/system/system.install:223
+msgid "Writable (<em>private</em> download method)"
+msgstr "Dapat ditulisi (metoda pengunduhan <em>private</em>)"
+
+#: (duplicate) modules/system/system.install:230
+msgid "Database updates"
+msgstr "Pengkinian basisdata"
+
+#: (duplicate) modules/system/system.install:232
+msgid "Up to date"
+msgstr "Terkini"
+
+#: (duplicate) modules/system/system.install:242
+msgid "Out of date"
+msgstr "Kedaluarsa"
+
+#: (duplicate) modules/system/system.install:243
+msgid ""
+"Some modules have database schema updates to install. You should run the <a "
+"href=\"@update\">database update script</a> immediately."
+msgstr ""
+"Beberapa modul memiliki skema basisdata baru untuk diinstal. Anda hendaknya "
+"segera menjalankan <a href=\"@update\">skrip database terkini</a>"
+
+#: (duplicate) modules/system/system.install:256
+msgid ""
+"The update.php script is accessible to everyone without authentication "
+"check, which is a security risk. You must change the $update_free_access "
+"value in your settings.php back to FALSE."
+msgstr ""
+"Skrip update.php dapat diaksesm semua orang tanpa pengecekan autentikasi, "
+"dimana merupakan resiko keamanan. Anda harus mengganti nilai "
+"$update_free_access dalam settings.php ke FALSE."
+
+#: (duplicate) modules/system/system.install:264
+msgid "Access to update.php"
+msgstr "Akses ke update.php"
+
+#: (duplicate) modules/system/system.install:275
+msgid "Not enabled"
+msgstr "Tidak diaktifkan"
+
+#: (duplicate) modules/system/system.install:277
+msgid ""
+"Update notifications are not enabled. It is <strong>highly recommended</"
+"strong> that you enable the update status module from the <a href=\"@module"
+"\">module administration page</a> in order to stay up-to-date on new "
+"releases. For more information please read the <a href=\"@update\">Update "
+"status handbook page</a>."
+msgstr ""
+"Notifikasi pembaharuan tidak diaktifkan. <strong>Sangat disarankan</strong> "
+"untuk mengaktifkan modul status pengkinian dari <a href=\"@module\">halaman "
+"administrasi modul</a> untuk tujuan tetap memiliki yang terbaru pada setiap "
+"ada pembaharuan. Untuk informasi lebih lanjut lihat <a href=\"@update"
+"\">Halaman buku pegangan status terkini</a>."
+
+#: (duplicate) modules/system/system.install:286
+msgid "HTTP request status"
+msgstr "HTTP memerlukan status"
+
+#: (duplicate) modules/system/system.install:287
+msgid "Fails"
+msgstr "Gagal"
+
+#: (duplicate) modules/system/system.install:289
+msgid ""
+"Your system or network configuration does not allow Drupal to access web "
+"pages, resulting in reduced functionality. This could be due to your "
+"webserver configuration or PHP settings, and should be resolved in order to "
+"download information about available updates, fetch aggregator feeds, sign "
+"in via OpenID, or use other network-dependent services."
+msgstr ""
+"Konfigurasi sistem atau jaringan tidak mengijinkan Drupal untuk mengakses "
+"halaman situs, hal ini menghasilkan penurunan dalam fungsionalitasnya. "
+"kemungkinan disebabkan karena konfigurasi webserver atau pengaturan PHP, dan "
+"harus dipecahkan untuk mengunduh informasi mengenai perbaharuan yang ada, "
+"masukkan melalui aggregator feeds, masuk melalui OpenID, atau menggunakan "
+"jasa jaringan independent lainnya."
+
+#: profiles/default/default.profile:100
+msgid "Page"
+msgstr "Halaman"
+
+#: profiles/default/default.profile:102
+msgid ""
+"A <em>page</em>, similar in form to a <em>story</em>, is a simple method for "
+"creating and displaying information that rarely changes, such as an \"About "
+"us\" section of a website. By default, a <em>page</em> entry does not allow "
+"visitor comments and is not featured on the site's initial home page."
+msgstr ""
+"Sebuah <em>halaman</em>, yang serupa dengan formulir pada <em>cerita</em>, "
+"merupakan metoda sederhana untuk menghasilkan dan memperlihatkan informasi "
+"yang jarang berubah pada situs, seperti seksi \"Tentang kami\". Secara "
+"default, sebuah masukkan <em>halaman</em> tidak mengijinkan komentar "
+"pengunjung dan tidak ada pada halaman rumah inisial situs."
+
+#: profiles/default/default.profile:111
+msgid "Story"
+msgstr "Cerita"
+
+#: profiles/default/default.profile:113
+msgid ""
+"A <em>story</em>, similar in form to a <em>page</em>, is ideal for creating "
+"and displaying content that informs or engages website visitors. Press "
+"releases, site announcements, and informal blog-like entries may all be "
+"created with a <em>story</em> entry. By default, a <em>story</em> entry is "
+"automatically featured on the site's initial home page, and provides the "
+"ability to post comments."
+msgstr ""
+"Sebuah <em>cerita</em>, serupa dengan formulir pada <em>halaman</em>, adalah "
+"hal ideal untuk menghasilkan dan memerlihatkan isi tentang informasi atau "
+"menarik pengunjung situs. Press release, pengumuman situs, dan masukan "
+"serupa blog, semua dapat dibuat dengan masukan <em>cerita</em>. Secara "
+"default, masukan <em>cerita</em> secara otomatis dipasang pada halaman rumah "
+"situs, dan dapat digunakan untuk mengirimkan komentar."
