@@ -1,13 +1,3 @@
-core = 6.x 
-
-; Contrib projects 
-
-projects[admin][subdir] = "contrib"
-projects[casetracker][subdir] = "contrib"
-projects[cck][subdir] = "contrib"
-projects[codefilter][subdir] = "contrib"
-projects[comment_upload][subdir] = "contrib"
-projects[content_profile][subdir] = "contrib"
 projects[context][subdir] = "contrib"
 projects[date][subdir] = "contrib"
 projects[diff][subdir] = "contrib"
@@ -17,6 +7,7 @@ projects[feedapi_mapper][subdir] = "contrib"
 projects[imageapi][subdir] = "contrib"
 projects[imagecache][subdir] = "contrib"
 projects[mail2web][subdir] = "contrib"
+projects[mail2web][version] = "6.x-1.0-beta3"
 projects[mailhandler][subdir] = "contrib"
 projects[markdown][subdir] = "contrib"
 projects[messaging][subdir] = "contrib"
@@ -80,6 +71,7 @@ projects[simpletest][subdir] = "developer"
 
 ; l10n
 
+projects[atrium_translate][type] = "module"
 projects[atrium_translate][download][type] = "git"
 projects[atrium_translate][download][url] = "git://github.com/mig5/atrium_translate.git"
 projects[atrium_translate][subdir] = "l10n"
