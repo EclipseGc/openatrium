@@ -48,6 +48,7 @@ projects[imagecache][version] = "2.0-beta10"
 projects[mail2web][download][type] = "git"
 projects[mail2web][download][url] = "git://github.com/mig5/mail2web.git"
 projects[mail2web][subdir] = "contrib"
+projects[mail2web][version] = "1.0-beta3"
 
 projects[mailhandler][subdir] = "contrib"
 projects[mailhandler][version] = "1.8"
