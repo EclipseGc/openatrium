@@ -43,7 +43,7 @@ projects[views_bulk_operations][subdir] = "contrib"
 ; Patched
 ; Explicit versions specified to ensure patches apply cleanly. 
 projects[views][subdir] = "contrib"
-projects[views][version] = "6.x-2.6"
+projects[views][version] = "2.6"
 projects[views][patch][] = "http://drupal.org/files/issues/views-issue-357529.patch" 
 projects[views][patch][] = "http://drupal.org/files/issues/taxonomy_views_data_v2.patch"
 
