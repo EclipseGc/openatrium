@@ -1,3 +1,13 @@
+core = 6.x 
+
+; Contrib projects 
+
+projects[admin][subdir] = "contrib"
+projects[casetracker][subdir] = "contrib"
+projects[cck][subdir] = "contrib"
+projects[codefilter][subdir] = "contrib"
+projects[comment_upload][subdir] = "contrib"
+projects[content_profile][subdir] = "contrib"
 projects[context][subdir] = "contrib"
 projects[date][subdir] = "contrib"
 projects[diff][subdir] = "contrib"
