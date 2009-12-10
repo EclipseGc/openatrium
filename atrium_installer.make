@@ -16,8 +16,12 @@ projects[feedapi][subdir] = "contrib"
 projects[feedapi_mapper][subdir] = "contrib"
 projects[imageapi][subdir] = "contrib"
 projects[imagecache][subdir] = "contrib"
+
+; Mail2web no longer exists / was renamed on d.o . I guess this should be in custom and not contrib now
+projects[mail2web][download][type] = "git"
+projects[mail2web][download][url] = "git://github.com/mig5/mail2web.git"
 projects[mail2web][subdir] = "contrib"
-projects[mail2web][version] = "6.x-1.0-beta3"
+
 projects[mailhandler][subdir] = "contrib"
 projects[markdown][subdir] = "contrib"
 projects[messaging][subdir] = "contrib"
