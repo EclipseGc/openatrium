@@ -217,8 +217,8 @@ projects[atrium_translate][download][type] = "git"
 projects[atrium_translate][download][url] = "git://github.com/mig5/atrium_translate.git"
 projects[atrium_translate][subdir] = "l10n"
 
+; No version for core_translation as there's only a 1.x-dev release node, no workies with Drush Make
 projects[core_translation][subdir] = "l10n"
-projects[core_translation][version] = "1.x-dev"
 
 projects[l10n_client][subdir] = "l10n"
 projects[l10n_client][version] = "1.7"
