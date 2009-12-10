@@ -49,6 +49,7 @@ projects[views][patch][] = "http://drupal.org/files/issues/taxonomy_views_data_v
 
 ; Custom modules
 
+projects[atrium][type] = "module"
 projects[atrium][download][type] = "git"
 projects[atrium][download][url] = "git://github.com/mig5/atrium.git"
 projects[atrium][subdir] = "custom"
@@ -82,6 +83,48 @@ projects[coder][subdir] = "developer"
 projects[devel][subdir] = "developer"
 projects[schema][subdir] = "developer"
 projects[simpletest][subdir] = "developer"
+
+; Features
+
+projects[atrium_blog][download][type] = "git"
+projects[atrium_blog][download][url] = "git://github.com/mig5/atrium_blog.git"
+projects[atrium_blog][subdir] = "features"
+
+projects[atrium_book][download][type] = "git"
+projects[atrium_book][download][url] = "git://github.com/mig5/atrium_book.git"
+projects[atrium_book][subdir] = "features"
+
+projects[atrium_calendar][download][type] = "git"
+projects[atrium_calendar][download][url] = "git://github.com/mig5/atrium_calendar.git"
+projects[atrium_calendar][subdir] = "features"
+
+projects[atrium_casetracker][download][type] = "git"
+projects[atrium_casetracker][download][url] = "git://github.com/mig5/atrium_casetracker.git"
+projects[atrium_casetracker][subdir] = "features"
+
+projects[atrium_dashboard][download][type] = "git"
+projects[atrium_dashboard][download][url] = "git://github.com/mig5/atrium_dashboard.git"
+projects[atrium_dashboard][subdir] = "features"
+
+projects[atrium_groups][download][type] = "git"
+projects[atrium_groups][download][url] = "git://github.com/mig5/atrium_groups.git"
+projects[atrium_groups][subdir] = "features"
+
+projects[atrium_intranet][download][type] = "git"
+projects[atrium_intranet][download][url] = "git://github.com/mig5/atrium_intranet.git"
+projects[atrium_intranet][subdir] = "features"
+
+projects[atrium_members][download][type] = "git"
+projects[atrium_members][download][url] = "git://github.com/mig5/atrium_members.git"
+projects[atrium_members][subdir] = "features"
+
+projects[atrium_profile][download][type] = "git"
+projects[atrium_profile][download][url] = "git://github.com/mig5/atrium_profile.git"
+projects[atrium_profile][subdir] = "features"
+
+projects[atrium_shoutbox][download][type] = "git"
+projects[atrium_shoutbox][download][url] = "git://github.com/mig5/atrium_shoutbox.git"
+projects[atrium_shoutbox][subdir] = "features"
 
 ; l10n
 
