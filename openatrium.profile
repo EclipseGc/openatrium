@@ -98,15 +98,13 @@ function _openatrium_atrium_modules() {
     'content', 'nodereference', 'text', 'optionwidgets',
     // FeedAPI
     'feedapi', 'feedapi_node', 'feedapi_mapper', 'feedapi_inherit', 'parser_ical',
-    // Messaging
-    // 'messaging_shoutbox',
     // Notifications
     // 'mail2web', 'mailhandler',
     'notifications_team',
     // Content profile
     'content_profile',
     // Atrium features
-    'atrium_blog', 'atrium_book', 'atrium_calendar', 'atrium_dashboard', 'atrium_casetracker', 'atrium_profile', 'atrium_shoutbox',
+    'atrium_blog', 'atrium_book', 'atrium_calendar', 'atrium_casetracker', 'atrium_profile',
     // Formats
     'codefilter', 'markdown',
     // Others
@@ -117,6 +115,10 @@ function _openatrium_atrium_modules() {
     'views_bulk_operations',
     // Atrium intranet distro module
     'atrium_groups', 'atrium_members', 'atrium_intranet',
+
+    // @TODO: Determine fate of shoutbox.
+    // 'messaging_shoutbox',
+    // 'atrium_shoutbox',
   );
 }
 
