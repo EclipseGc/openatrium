@@ -161,6 +161,5 @@ projects[rubik][location] = "http://code.developmentseed.org/fserver"
 projects[ginkgo][type] = "theme"
 projects[ginkgo][download][type] = "git"
 projects[ginkgo][download][url] = "git://github.com/developmentseed/ginkgo.git"
-projects[ginkgo][version] = "0.1"
 
 ; @TODO: scene subtheme
