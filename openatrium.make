@@ -21,8 +21,9 @@ projects[content_profile][subdir] = "contrib"
 projects[content_profile][version] = "1.0-beta4"
 
 projects[context][subdir] = "contrib"
+projects[context][type] = "module"
 projects[context][download][type] = "cvs"
-projects[context][download][url] = "contributions/modules/context"
+projects[context][download][module] = "contributions/modules/context"
 projects[context][download][revision] = "DRUPAL-6--3"
 
 projects[ctools][subdir] = "contrib"
@@ -82,13 +83,15 @@ projects[purl][subdir] = "contrib"
 projects[purl][version] = "1.0-beta6"
 
 projects[spaces][subdir] = "contrib"
+projects[spaces][type] = "module"
 projects[spaces][download][type] = "cvs"
-projects[spaces][download][url] = "contributions/modules/spaces"
+projects[spaces][download][module] = "contributions/modules/spaces"
 projects[spaces][download][revision] = "DRUPAL-6--3"
 
 projects[strongarm][subdir] = "contrib"
+projects[strongarm][type] = "module"
 projects[strongarm][download][type] = "cvs"
-projects[strongarm][download][url] = "contributions/modules/strongarm"
+projects[strongarm][download][module] = "contributions/modules/strongarm"
 projects[strongarm][download][revision] = "DRUPAL-6--2"
 
 projects[token][subdir] = "contrib"
