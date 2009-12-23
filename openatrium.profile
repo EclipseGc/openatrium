@@ -109,8 +109,8 @@ function _openatrium_atrium_modules() {
     'codefilter', 'markdown',
     // Others
     'comment_upload', 'diff', 'prepopulate', 'xref',
-    // Spaces design customizer
-    'color', 'spaces_design',
+    // DesignKit
+    'color', 'designkit',
     // VBO
     'views_bulk_operations',
     // Atrium intranet distro module
