@@ -126,8 +126,10 @@ projects[litenode][subdir] = "custom"
 
 ; @TODO: determine the fate of messaging shoutbox.
 
+projects[seed][type] = "module"
+projects[seed][download][type] = "git"
+projects[seed][download][url] = "git://github.com/developmentseed/seed.git"
 projects[seed][subdir] = "custom"
-projects[seed][location] = "http://code.developmentseed.org/fserver"
 
 projects[xref][type] = "module"
 projects[xref][download][type] = "git"
