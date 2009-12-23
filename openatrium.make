@@ -139,7 +139,6 @@ projects[simpletest][version] = "2.8"
 projects[atrium_features][type] = "module"
 projects[atrium_features][download][type] = "git"
 projects[atrium_features][download][url] = "git://github.com/developmentseed/atrium_features.git"
-projects[atrium][subdir] = "features"
 
 ; l10n
 ; No version for core_translation as there's only a 1.x-dev release node, no workies with Drush Make
