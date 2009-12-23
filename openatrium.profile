@@ -37,7 +37,9 @@ function openatrium_profile_modules() {
     // OG
     'og', 'og_access', 'og_actions', 'og_views',
     // Context
-    'context', 'context_contrib',
+    'context',
+    // CTools
+    'ctools',
     // Date
     'date_api', 'date_timezone',
     // Features
@@ -59,7 +61,7 @@ function openatrium_profile_modules() {
     // Seed
     'seed',
     // Spaces
-    'spaces', 'spaces_site', 'spaces_user', 'spaces_og',
+    'spaces', 'spaces_user', 'spaces_og',
     // Ucreate
     'ucreate', 'ucreate_og',
     // Atrium
@@ -97,9 +99,10 @@ function _openatrium_atrium_modules() {
     // FeedAPI
     'feedapi', 'feedapi_node', 'feedapi_mapper', 'feedapi_inherit', 'parser_ical',
     // Messaging
-    'messaging_shoutbox',
+    // 'messaging_shoutbox',
     // Notifications
-    'notifications_team', 'mail2web', 'mailhandler',
+    // 'mail2web', 'mailhandler',
+    'notifications_team',
     // Content profile
     'content_profile',
     // Atrium features
@@ -251,24 +254,20 @@ function _openatrium_intranet_configure() {
   taxonomy_save_vocabulary($vocab);
 
   // Set time zone
+  // @TODO: This is not sufficient. We either need to display a message or
+  // derive a default date API location.
   $tz_offset = date('Z');
   variable_set('date_default_timezone', $tz_offset);
 
   // Set a default footer message.
   variable_set('site_footer', '&copy; 2009 '. l('Development Seed', 'http://www.developmentseed.org', array('absolute' => TRUE)));
 
-  // Set default theme. This needes some more set up on next page load
-  // We cannot do everything here because of _system_theme_data() static cache
-  system_theme_data();
-  db_query("UPDATE {system} SET status = 0 WHERE type = 'theme' and name ='%s'", 'garland');
-  variable_set('theme_default', 'ginkgo');
-  db_query("UPDATE {blocks} SET status = 0, region = ''"); // disable all DB blocks
-
-  // Revert the filter that messaging provides to our default.  
-  $component = 'filter';
-  $module = 'atrium_intranet';
-  module_load_include('inc', 'features', "features.{$component}");
-  module_invoke($component, 'features_revert', $module);  
+  // Revert the filter that messaging provides to our default.
+  features_revert(array('atrium_intranet' => array('filter')));
+  // $component = 'filter';
+  // $module = 'atrium_intranet';
+  // module_load_include('inc', 'features', "features.{$component}");
+  // module_invoke($component, 'features_revert', $module);  
 }
 
 /**
@@ -276,16 +275,19 @@ function _openatrium_intranet_configure() {
  */
 function _openatrium_intranet_configure_check() {
   // Rebuild key tables/caches
-  module_rebuild_cache(); // Detects the newly added bootstrap modules
+  module_rebuild_cache();
   node_access_rebuild();
-  drupal_get_schema(NULL, TRUE); // Clear schema DB cache
+  drupal_get_schema(NULL, TRUE);
   drupal_flush_all_caches();    
-  system_theme_data();  // Rebuild theme cache.
-   _block_rehash();      // Rebuild block cache.
-  views_invalidate_cache(); // Rebuild the views.
-  // This one is done by the installer alone
-  //menu_rebuild();       // Rebuild the menu.
-  features_rebuild();   // Features rebuild scripts.
+
+  // Set default theme. This must happen after drupal_flush_all_caches(), which
+  // will run system_theme_data() without detecting themes in the install
+  // profile directory.
+  _openatrium_system_theme_data();
+  db_query("UPDATE {blocks} SET status = 0, region = ''"); // disable all DB blocks
+  db_query("UPDATE {system} SET status = 0 WHERE type = 'theme' and name ='%s'", 'garland');
+  db_query("UPDATE {system} SET status = 0 WHERE type = 'theme' and name ='%s'", 'ginkgo');
+  variable_set('theme_default', 'ginkgo');
 }
 
 /**
@@ -367,5 +369,89 @@ function system_form_install_configure_form_alter(&$form, $form_state) {
       '#description' => t('Select the default site time zone. If in doubt, choose the timezone that is closest to your location which has the same rules for daylight saving time.'),
       '#required' => TRUE,
     );
+  }
+}
+
+/**
+ * Reimplementation of system_theme_data(). The core function's static cache
+ * is populated during install prior to active install profile awareness.
+ * This workaround makes enabling themes in profiles/[profile]/themes possible.
+ */
+function _openatrium_system_theme_data() {
+  global $profile;
+  $profile = 'openatrium';
+
+  $themes = drupal_system_listing('\.info$', 'themes');
+  $engines = drupal_system_listing('\.engine$', 'themes/engines');
+
+  $defaults = system_theme_default();
+
+  $sub_themes = array();
+  foreach ($themes as $key => $theme) {
+    $themes[$key]->info = drupal_parse_info_file($theme->filename) + $defaults;
+
+    if (!empty($themes[$key]->info['base theme'])) {
+      $sub_themes[] = $key;
+    }
+
+    $engine = $themes[$key]->info['engine'];
+    if (isset($engines[$engine])) {
+      $themes[$key]->owner = $engines[$engine]->filename;
+      $themes[$key]->prefix = $engines[$engine]->name;
+      $themes[$key]->template = TRUE;
+    }
+
+    // Give the stylesheets proper path information.
+    $pathed_stylesheets = array();
+    foreach ($themes[$key]->info['stylesheets'] as $media => $stylesheets) {
+      foreach ($stylesheets as $stylesheet) {
+        $pathed_stylesheets[$media][$stylesheet] = dirname($themes[$key]->filename) .'/'. $stylesheet;
+      }
+    }
+    $themes[$key]->info['stylesheets'] = $pathed_stylesheets;
+
+    // Give the scripts proper path information.
+    $scripts = array();
+    foreach ($themes[$key]->info['scripts'] as $script) {
+      $scripts[$script] = dirname($themes[$key]->filename) .'/'. $script;
+    }
+    $themes[$key]->info['scripts'] = $scripts;
+
+    // Give the screenshot proper path information.
+    if (!empty($themes[$key]->info['screenshot'])) {
+      $themes[$key]->info['screenshot'] = dirname($themes[$key]->filename) .'/'. $themes[$key]->info['screenshot'];
+    }
+  }
+
+  foreach ($sub_themes as $key) {
+    $themes[$key]->base_themes = system_find_base_themes($themes, $key);
+    // Don't proceed if there was a problem with the root base theme.
+    if (!current($themes[$key]->base_themes)) {
+      continue;
+    }
+    $base_key = key($themes[$key]->base_themes);
+    foreach (array_keys($themes[$key]->base_themes) as $base_theme) {
+      $themes[$base_theme]->sub_themes[$key] = $themes[$key]->info['name'];
+    }
+    // Copy the 'owner' and 'engine' over if the top level theme uses a
+    // theme engine.
+    if (isset($themes[$base_key]->owner)) {
+      if (isset($themes[$base_key]->info['engine'])) {
+        $themes[$key]->info['engine'] = $themes[$base_key]->info['engine'];
+        $themes[$key]->owner = $themes[$base_key]->owner;
+        $themes[$key]->prefix = $themes[$base_key]->prefix;
+      }
+      else {
+        $themes[$key]->prefix = $key;
+      }
+    }
+  }
+
+  // Extract current files from database.
+  system_get_files_database($themes, 'theme');
+  db_query("DELETE FROM {system} WHERE type = 'theme'");
+  foreach ($themes as $theme) {
+    $theme->owner = !isset($theme->owner) ? '' : $theme->owner;
+    db_query("INSERT INTO {system} (name, owner, info, type, filename, status, throttle, bootstrap) VALUES ('%s', '%s', '%s', '%s', '%s', %d, %d, %d)", $theme->name, $theme->owner, serialize($theme->info), 'theme', $theme->filename, isset($theme->status) ? $theme->status : 0, 0, 0);
   }
 }

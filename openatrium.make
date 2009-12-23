@@ -23,6 +23,9 @@ projects[content_profile][version] = "1.0-beta4"
 projects[context][subdir] = "contrib"
 projects[context][version] = "3.0-alpha1"
 
+projects[ctools][subdir] = "contrib"
+projects[ctools][version] = "1.2"
+
 projects[date][subdir] = "contrib"
 projects[date][version] = "2.4"
 
