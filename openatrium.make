@@ -86,6 +86,11 @@ projects[prepopulate][subdir] = "contrib"
 projects[prepopulate][version] = "1.1"
 
 projects[purl][subdir] = "contrib"
+projects[purl][type] = "module"
+projects[purl][download][type] = "cvs"
+projects[purl][download][module] = "contributions/modules/purl"
+projects[purl][download][revision] = "DRUPAL-6--1"
+
 projects[purl][version] = "1.0-beta6"
 
 projects[spaces][subdir] = "contrib"
