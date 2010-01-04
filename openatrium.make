@@ -33,7 +33,7 @@ projects[date][subdir] = "contrib"
 projects[date][version] = "2.4"
 
 projects[designkit][subdir] = "contrib"
-projects[designkit][version] = "1.0-alpha2"
+projects[designkit][version] = "1.0-alpha3"
 
 projects[diff][subdir] = "contrib"
 projects[diff][version] = "2.1-alpha3"
