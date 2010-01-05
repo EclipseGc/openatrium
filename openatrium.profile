@@ -37,7 +37,7 @@ function openatrium_profile_modules() {
     // OG
     'og', 'og_access', 'og_actions', 'og_views',
     // Context
-    'context',
+    'context', 'context_ui',
     // CTools
     'ctools',
     // Date
@@ -105,6 +105,8 @@ function _openatrium_atrium_modules() {
     'content_profile',
     // Atrium features
     'atrium_blog', 'atrium_book', 'atrium_calendar', 'atrium_casetracker', 'atrium_profile',
+    // Dashboard
+    'spaces_dashboard', 'jquery_ui',
     // Formats
     'codefilter', 'markdown',
     // Others

@@ -56,6 +56,9 @@ projects[imageapi][version] = "1.6"
 projects[imagecache][subdir] = "contrib"
 projects[imagecache][version] = "2.0-beta10"
 
+projects[jquery_ui][subdir] = "contrib"
+projects[jquery_ui][version] = "1"
+
 ; @TODO add mailcomment (previously mail2web)
 
 projects[mailhandler][subdir] = "contrib"
@@ -188,3 +191,9 @@ projects[ginkgo][download][type] = "git"
 projects[ginkgo][download][url] = "git://github.com/developmentseed/ginkgo.git"
 
 ; @TODO: scene subtheme
+
+; Libraries
+libraries[jquery_ui][download][type] = "get"
+libraries[jquery_ui][download][url] = "http://jquery-ui.googlecode.com/files/jquery.ui-1.6.zip"
+libraries[jquery_ui][directory_name] = "jquery.ui"
+libraries[jquery_ui][destination] = "modules/contrib/jquery_ui"
