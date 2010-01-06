@@ -1,9 +1,9 @@
 INSTRUCTIONS
 
-1. Change the name of the install profile
-2. run drush cache clear
-3. update.php
-4. Revert features 
+1. Change the name of the install profile - see notes.
+2. Clear Drupal's cache - "drush cache clear"
+3. Run update.php - "drush updatedb"
+4. Revert features - see notes.
 
 =======================================
 
@@ -35,6 +35,3 @@ TODO for the upgrade.
 
 ### CT Basis needs to be disabled.
 
-### Status of migration for order of features in groups.
-
-### Enable dashboard at least for groups that have it as the home page.
