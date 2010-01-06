@@ -9,19 +9,25 @@ INSTRUCTIONS
 
 NOTES
 
-### Install profile needs to be renamed.
+### Install profile has been renamed.
 
-update variable set value = 's:10:"openatrium";' where name = 'install_profile';
+mysql> update variable set value = 's:10:"openatrium";' where name = 'install_profile';
 
 -or-
 
 $conf['install_profile'] = 'openatrium';
 
 
-### Many overrides will need manual review.
+### Overrides need to be reverted.
 
 drush -y features revert atrium atrium_groups atrium_intranet atrium_members atrium_profile
 drush -y features revert atrium_blog atrium_book atrium_calendar atrium_casetracker atrium_shoutbox spaces_dashboard
+
+### On older installations you may need to manually reset the default input format
+
+* Goto admin/settings/filters
+* Select the desired format, eg 'Markdown'
+* Click 'Set default format'
 
 =======================================
 
@@ -30,7 +36,5 @@ TODO for the upgrade.
 ### CT Basis needs to be disabled.
 
 ### Status of migration for order of features in groups.
-
-### Enable designkit & spaces_dashboard & context_layouts & Jquery_ui
 
 ### Enable dashboard at least for groups that have it as the home page.
