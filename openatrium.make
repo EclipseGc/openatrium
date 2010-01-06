@@ -127,6 +127,7 @@ projects[views][version] = "2.6"
 projects[views][patch][] = "http://drupal.org/files/issues/views-issue-357529.patch" 
 projects[views][patch][] = "http://drupal.org/files/issues/taxonomy_views_data_v2.patch"
 projects[views][patch][] = "http://drupal.org/files/issues/views_check_perm_callback.patch"
+projects[views][patch][] = "http://drupal.org/files/issues/views_namespaced_tabs.patch"
 
 ; Custom modules
 projects[litecal][type] = "module"
@@ -184,7 +185,10 @@ projects[l10n_update][subdir] = "l10n"
 
 ; Themes
 projects[tao][location] = "http://code.developmentseed.org/fserver"
-projects[rubik][location] = "http://code.developmentseed.org/fserver"
+
+projects[rubik][type] = "theme"
+projects[rubik][download][type] = "git"
+projects[rubik][download][url] = "git://github.com/developmentseed/rubik.git"
 
 projects[ginkgo][type] = "theme"
 projects[ginkgo][download][type] = "git"
