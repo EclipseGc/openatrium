@@ -37,7 +37,7 @@ function openatrium_profile_modules() {
     // OG
     'og', 'og_access', 'og_actions', 'og_views',
     // Context
-    'context', 'context_ui',
+    'context', 'context_ui', 'context_layouts',
     // CTools
     'ctools',
     // Date
