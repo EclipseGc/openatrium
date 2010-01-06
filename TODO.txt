@@ -1,0 +1,36 @@
+INSTRUCTIONS
+
+1. Change the name of the install profile
+2. run drush cache clear
+3. update.php
+4. Revert features 
+
+=======================================
+
+NOTES
+
+### Install profile needs to be renamed.
+
+update variable set value = 's:10:"openatrium";' where name = 'install_profile';
+
+-or-
+
+$conf['install_profile'] = 'openatrium';
+
+
+### Many overrides will need manual review.
+
+drush -y features revert atrium atrium_groups atrium_intranet atrium_members atrium_profile
+drush -y features revert atrium_blog atrium_book atrium_calendar atrium_casetracker atrium_shoutbox spaces_dashboard
+
+=======================================
+
+TODO for the upgrade.
+
+### CT Basis needs to be disabled.
+
+### Status of migration for order of features in groups.
+
+### Enable designkit & spaces_dashboard & context_layouts & Jquery_ui
+
+### Enable dashboard at least for groups that have it as the home page.
