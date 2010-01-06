@@ -116,7 +116,7 @@ function _openatrium_atrium_modules() {
     // VBO
     'views_bulk_operations',
     // Atrium intranet distro module
-    'atrium_groups', 'atrium_members', 'atrium_intranet',
+    'atrium_groups', 'atrium_members',
 
     // @TODO: Determine fate of shoutbox.
     // 'messaging_shoutbox',
@@ -266,12 +266,12 @@ function _openatrium_intranet_configure() {
   // Set a default footer message.
   variable_set('site_footer', '&copy; 2009 '. l('Development Seed', 'http://www.developmentseed.org', array('absolute' => TRUE)));
 
-  // Revert the filter that messaging provides to our default.
-  features_revert(array('atrium_intranet' => array('filter')));
-  // $component = 'filter';
-  // $module = 'atrium_intranet';
-  // module_load_include('inc', 'features', "features.{$component}");
-  // module_invoke($component, 'features_revert', $module);  
+  // Revert key components that are overridden by others on install.
+  $revert = array(
+    'atrium' => array('filter'),
+    'atrium_book' => array('variable'),
+  );
+  features_revert($revert);
 }
 
 /**
