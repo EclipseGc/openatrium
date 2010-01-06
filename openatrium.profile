@@ -91,7 +91,7 @@ function _openatrium_atrium_modules() {
     // Core features
     'book',
     // Casetracker
-    'casetracker', 'casetracker_basic',
+    'casetracker',
     // Calendar, date
     'date', 'date_popup', 'litecal',
     // CCK
