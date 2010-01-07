@@ -33,5 +33,4 @@ drush -y features revert atrium_blog atrium_book atrium_calendar atrium_casetrac
 
 TODO for the upgrade.
 
-### CT Basis needs to be disabled.
-
+...
