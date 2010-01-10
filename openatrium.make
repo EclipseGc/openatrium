@@ -80,7 +80,7 @@ projects[og][subdir] = "contrib"
 projects[og][version] = "2.0"
 
 projects[openidadmin][subdir] = "contrib"
-projects[openidadmin][version] = "1.0"
+projects[openidadmin][version] = "1.1"
 
 projects[parser_ical][subdir] = "contrib"
 projects[parser_ical][version] = "1.1"
