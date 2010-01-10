@@ -3,7 +3,10 @@ core = "6.x"
 ; Contrib projects 
 
 projects[admin][subdir] = "contrib"
-projects[admin][version] = "2"
+projects[admin][type] = "module"
+projects[admin][download][type] = "cvs"
+projects[admin][download][module] = "contributions/modules/admin"
+projects[admin][download][revision] = "DRUPAL-6--2"
 
 projects[casetracker][subdir] = "contrib"
 projects[casetracker][version] = "1.0-beta4"
