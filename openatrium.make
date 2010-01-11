@@ -187,7 +187,9 @@ projects[l10n_update][subdir] = "l10n"
 ;projects[l10n_update][version] = ?
 
 ; Themes
-projects[tao][location] = "http://code.developmentseed.org/fserver"
+projects[tao][type] = "theme"
+projects[tao][download][type] = "git"
+projects[tao][download][url] = "git://github.com/developmentseed/tao.git"
 
 projects[rubik][type] = "theme"
 projects[rubik][download][type] = "git"
