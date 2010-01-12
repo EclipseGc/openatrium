@@ -129,7 +129,7 @@ projects[views][subdir] = "contrib"
 projects[views][version] = "2.6"
 projects[views][patch][] = "http://drupal.org/files/issues/views-issue-357529.patch" 
 projects[views][patch][] = "http://drupal.org/files/issues/taxonomy_views_data_v2.patch"
-projects[views][patch][] = "http://drupal.org/files/issues/views_check_perm_callback.patch"
+projects[views][patch][] = "http://drupal.org/files/issues/views_check_perm_callback_0.patch"
 projects[views][patch][] = "http://drupal.org/files/issues/views_namespaced_tabs.patch"
 
 ; Custom modules
