@@ -33,6 +33,10 @@ You may need to manually reset the default input format
 2. Select the desired format, eg 'Markdown'
 3. Click 'Set default format'
 
+If you have had to reset the default format, you may also need to manually set the allow tags. Below are some tags to get you going:
+
+<div> <span> <br> <a> <em> <strong> <cite> <code> <strike> <ul> <ol> <li> <dl> <dt> <dd> <img> <blockquote> <p> <pre> <h1> <h2> <h3> <h4> <h5> <h6> <table> <caption> <thead> <th> <td> <tr> <sup> <sub>
+
 There maybe other variable that need to be reset
 
 1. Goto admin/settings/strongarm
