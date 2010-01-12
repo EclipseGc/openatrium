@@ -11,11 +11,9 @@ NOTES
 
 ### Install profile has been renamed.
 
+Before you can update Open Atrium you must make your site aware of the new profile. 
+
 drush vset install_profile openatrium
-
--or-
-
-mysql> update variable set value = 's:10:"openatrium";' where name = 'install_profile';
 
 -or-
 
@@ -27,14 +25,17 @@ $conf['install_profile'] = 'openatrium';
 drush -y features revert atrium atrium_groups atrium_members atrium_profile
 drush -y features revert atrium_blog atrium_book atrium_calendar atrium_casetracker atrium_shoutbox spaces_dashboard
 
-### On older installations you may need to manually reset the default input format
+### Older installations 
 
-* Goto admin/settings/filters
-* Select the desired format, eg 'Markdown'
-* Click 'Set default format'
+You may need to manually reset the default input format
 
-=======================================
+1. Goto admin/settings/filters
+2. Select the desired format, eg 'Markdown'
+3. Click 'Set default format'
 
-TODO for the upgrade.
+There maybe other variable that need to be reset
 
-...
+1. Goto admin/settings/strongarm
+2. Select the desired variables, eg 'site_404'
+3. Click 'Reset to defaults'
+
