@@ -131,6 +131,7 @@ projects[views][patch][] = "http://drupal.org/files/issues/views-issue-357529.pa
 projects[views][patch][] = "http://drupal.org/files/issues/taxonomy_views_data_v2.patch"
 projects[views][patch][] = "http://drupal.org/files/issues/views_check_perm_callback_0.patch"
 projects[views][patch][] = "http://drupal.org/files/issues/views_namespaced_tabs.patch"
+projects[views][patch][] = "http://drupal.org/files/issues/compare_views_block_hash.patch"
 
 ; Custom modules
 projects[litecal][type] = "module"
