@@ -3,10 +3,7 @@ core = "6.x"
 ; Contrib projects 
 
 projects[admin][subdir] = "contrib"
-projects[admin][type] = "module"
-projects[admin][download][type] = "cvs"
-projects[admin][download][module] = "contributions/modules/admin"
-projects[admin][download][revision] = "DRUPAL-6--2"
+projects[admin][version] = "2.0-alpha5"
 
 projects[casetracker][subdir] = "contrib"
 projects[casetracker][version] = "1.0-beta4"
@@ -24,10 +21,7 @@ projects[content_profile][subdir] = "contrib"
 projects[content_profile][version] = "1.0-beta4"
 
 projects[context][subdir] = "contrib"
-projects[context][type] = "module"
-projects[context][download][type] = "cvs"
-projects[context][download][module] = "contributions/modules/context"
-projects[context][download][revision] = "DRUPAL-6--3"
+projects[context][version] = "3.0-alpha2"
 
 projects[ctools][subdir] = "contrib"
 projects[ctools][version] = "1.2"
@@ -36,10 +30,7 @@ projects[date][subdir] = "contrib"
 projects[date][version] = "2.4"
 
 projects[designkit][subdir] = "contrib"
-projects[designkit][type] = "module"
-projects[designkit][download][type] = "cvs"
-projects[designkit][download][module] = "contributions/modules/designkit"
-projects[designkit][download][revision] = "DRUPAL-6--1"
+projects[designkit][version] = "1.0-alpha4"
 
 projects[diff][subdir] = "contrib"
 projects[diff][version] = "2.1-alpha3"
@@ -92,24 +83,13 @@ projects[prepopulate][subdir] = "contrib"
 projects[prepopulate][version] = "1.1"
 
 projects[purl][subdir] = "contrib"
-projects[purl][type] = "module"
-projects[purl][download][type] = "cvs"
-projects[purl][download][module] = "contributions/modules/purl"
-projects[purl][download][revision] = "DRUPAL-6--1"
-
-projects[purl][version] = "1.0-beta6"
+projects[purl][version] = "1.0-beta7"
 
 projects[spaces][subdir] = "contrib"
-projects[spaces][type] = "module"
-projects[spaces][download][type] = "cvs"
-projects[spaces][download][module] = "contributions/modules/spaces"
-projects[spaces][download][revision] = "DRUPAL-6--3"
+projects[spaces][version] = "3.0-alpha2"
 
 projects[strongarm][subdir] = "contrib"
-projects[strongarm][type] = "module"
-projects[strongarm][download][type] = "cvs"
-projects[strongarm][download][module] = "contributions/modules/strongarm"
-projects[strongarm][download][revision] = "DRUPAL-6--2"
+projects[strongarm][version] = "2.0-beta3"
 
 projects[token][subdir] = "contrib"
 projects[token][version] = "1.12"
@@ -146,9 +126,8 @@ projects[litenode][subdir] = "custom"
 
 ; @TODO: determine the fate of messaging shoutbox.
 
-projects[seed][type] = "module"
-projects[seed][download][type] = "git"
-projects[seed][download][url] = "git://github.com/developmentseed/seed.git"
+projects[seed][location] = "http://code.developmentseed.org/fserver"
+projects[seed][version] = "4.0"
 projects[seed][subdir] = "custom"
 
 projects[xref][type] = "module"
@@ -188,13 +167,11 @@ projects[l10n_update][subdir] = "l10n"
 ;projects[l10n_update][version] = ?
 
 ; Themes
-projects[tao][type] = "theme"
-projects[tao][download][type] = "git"
-projects[tao][download][url] = "git://github.com/developmentseed/tao.git"
+projects[tao][location] = "http://code.developmentseed.org/fserver"
+projects[tao][version] = "1.8"
 
-projects[rubik][type] = "theme"
-projects[rubik][download][type] = "git"
-projects[rubik][download][url] = "git://github.com/developmentseed/rubik.git"
+projects[rubik][location] = "http://code.developmentseed.org/fserver"
+projects[rubik][version] = "1.0-alpha4"
 
 projects[ginkgo][type] = "theme"
 projects[ginkgo][download][type] = "git"
